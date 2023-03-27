@@ -5,6 +5,8 @@ $padding: 20px!default;
 $grid: 80vw!default;
 $font-size: 16px!default;
 $border-width: 2px!default;
+$scrollbar-width: 4px!default;
+$border-radius: 0!default;
 
 /* colours */
 /* base */
@@ -13,6 +15,10 @@ $secondary-color: rgb(240,240,240)!default;
 $tertiary-color: rgb(80,80,80)!default;
 $quaternary-color: rgb(160,160,160)!default;
 
+/* accent */
+$primary-accent-color: rgb(37, 127, 210) !default;
+$secondary-accent-color: rgb(199, 50, 137) !default;
+
 /* utility */
 $success-color: rgb(19,190,108)!default;
 $warning-color: rgb(224,107,27)!default;
@@ -20,8 +26,11 @@ $error-color: rgb(196,78,78)!default;
 $disabled-color: rgb(125,125,125)!default;
 
 /* fonts */
-$primary-font-color: $primary-color;
-$secondary-font-color: $secondary-color;
+$primary-font-color: $secondary-color;
+$secondary-font-color: $primary-color;
+
+$primary-accent-font-color: $primary-accent-color;
+$secondary-accent-font-color: $secondary-accent-color;
 
 $success-font-color: $success-color;
 $warning-font-color: $warning-color;
@@ -33,6 +42,9 @@ $primary-background-color: $primary-color;
 $secondary-background-color: $secondary-color;
 $tertiary-background-color: $tertiary-color;
 $quaternary-background-color: $quaternary-color;
+
+$primary-accent-background-color: $primary-accent-color;
+$secondary-accent-background-color: $secondary-accent-color;
 
 $success-background-color: rgba($success-color, .25);
 $warning-background-color: rgba($warning-color, .25);
@@ -47,14 +59,15 @@ $secondary-font-stack: 'Helvetica', sans-serif!default;
 @import 'theme/_theme.scss';
 @import 'theme/_typography.scss';
 
+/* base */
+@import 'base/_base.scss';
+@import 'base/_reset.scss';
+@import 'base/_display.scss';
+
 /* layout */
 @import 'layout/_column.scss';
 @import 'layout/_content.scss';
 @import 'layout/_grid.scss';
-
-/* base */
-@import 'base/_reset.scss';
-@import 'base/_display.scss';
 
 /* components */
 @import 'components/_article.scss';
