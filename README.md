@@ -15,10 +15,10 @@ npm i @valdelaseras/pedestal
 
 ## variables
 
-Overwrite the following variables and default values for quick and simple customisation:
+Overwrite the following variables for quick and simple customisation:
 
 ```scss
-/* variables */
+/* base */
 $breakpoint: 1440px!default;
 $padding: 20px!default;
 $grid: 80vw!default;
@@ -30,6 +30,7 @@ $border-width: 2px!default;
 $primary-color: rgb(0,0,0)!default;
 $secondary-color: rgb(255,255,255)!default;
 
+/* utility */
 $success-color: rgb(19,190,108)!default;
 $warning-color: rgb(224,107,27)!default;
 $error-color: rgb(196,78,78)!default;
