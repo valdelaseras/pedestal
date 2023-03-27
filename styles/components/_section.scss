@@ -1,0 +1,10 @@
+/* section  */
+.section {
+    padding: $padding;
+}
+
+@media only screen and ( min-width: $breakpoint ){
+    .section {
+        padding: calc( $padding * 2 );
+    }
+}

@@ -1,0 +1,10 @@
+/* article  */
+.article {
+    padding: $padding;
+}
+
+@media only screen and ( min-width: $breakpoint ){
+    .article {
+        padding: calc( $padding * 2 );
+    }
+}

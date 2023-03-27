@@ -1,0 +1,11 @@
+/* base */
+body {
+    color: $primary-font-color;
+    font-family: $primary-font-stack;
+}
+
+/* p, span */
+p, span {
+    font-size: $font-size;
+    line-height: 1.5rem;
+}

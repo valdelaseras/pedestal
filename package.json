@@ -1,0 +1,25 @@
+{
+  "name": "pedestal",
+  "version": "1.0.0",
+  "description": "A simple, basic SCSS 'scaffold' to accelerate new project setups",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valdelaseras/pedestal.git"
+  },
+  "scripts": {
+    "sass-watch": "sass --watch styles/import.scss styles/index.css",
+    "sass-compile": "sass styles/import.scss styles/index.css"
+  },
+  "keywords": [
+    "scss"
+  ],
+  "author": "robin@weird.io",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valdelaseras/pedestal/issues"
+  },
+  "homepage": "https://github.com/valdelaseras/pedestal#readme",
+  "devDependencies": {
+    "sass": "^1.60.0"
+  }
+}

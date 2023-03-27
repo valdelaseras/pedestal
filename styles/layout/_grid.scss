@@ -1,0 +1,19 @@
+/* grid  */
+.grid {
+    height: 100%;
+    margin: 0 auto;
+}
+
+@media only screen and ( min-width: $breakpoint ){
+    .grid {
+        width: $grid;
+        max-width: $grid;
+    }
+}
+
+.grid::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+}

@@ -1,0 +1,79 @@
+/* base button */
+.btn {
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    padding: $padding calc( $padding * 2 );
+    border-width: $border-width;
+    border-style: solid;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+
+
+/* base disabled button */
+.btn.btn-disabled {
+    pointer-events: none;
+}
+
+.btn.btn-disabled:hover,
+.btn.btn-disabled:focus,
+.btn.btn-disabled:focus-within {
+    cursor: not-allowed;
+}
+
+
+
+/* primary button */
+.btn.btn-primary {
+
+}
+
+.btn.btn-primary:active {
+
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.btn.btn-primary:focus-within {
+
+}
+
+.btn.btn-disabled.btn-primary {
+
+}
+
+
+
+/* secondary button */
+.btn.btn-secondary {
+
+}
+
+.btn.btn-secondary:active {
+
+}
+
+.btn.btn-secondary:hover,
+.btn.btn-secondary:focus,
+.btn.btn-secondary:focus-within {
+
+}
+
+.btn.btn-disabled.btn-secondary {
+
+}
+
+
+
+/* compact button */
+.btn.btn-compact {
+
+}
+
+
+
+

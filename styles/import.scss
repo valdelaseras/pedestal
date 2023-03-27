@@ -1,0 +1,56 @@
+/* variables */
+$breakpoint: 1440px!default;
+$padding: 20px!default;
+$grid: 80vw!default;
+$font-size: 16px!default;
+$border-width: 2px!default;
+
+/* colours */
+/* base */
+$primary-color: rgb(0,0,0)!default;
+$secondary-color: rgb(255,255,255)!default;
+
+$success-color: rgb(19,190,108)!default;
+$warning-color: rgb(224,107,27)!default;
+$error-color: rgb(196,78,78)!default;
+
+/* fonts */
+$primary-font-color: $primary-color;
+$secondary-font-color: $secondary-color;
+
+$success-font-color: $success-color;
+$warning-font-color: $warning-color;
+$error-font-color: $error-color;
+
+/* background */
+$primary-background-color: $primary-color;
+$secondary-background-color: $secondary-color;
+
+$success-background-color: rgba($success-color, .25);
+$warning-background-color: rgba($warning-color, .25);
+$error-background-color: rgba($error-color, .25);
+
+/* typography */
+$primary-font-stack: 'Helvetica-Neue', sans-serif!default;
+$secondary-font-stack: 'Helvetica', sans-serif!default;
+
+/* theme */
+@import 'theme/_theme.scss';
+@import 'theme/_typography.scss';
+
+/* layout */
+@import 'layout/_column.scss';
+@import 'layout/_content.scss';
+@import 'layout/_grid.scss';
+
+/* base */
+@import 'base/_reset.scss';
+@import 'base/_display.scss';
+
+/* components */
+@import 'components/_article.scss';
+@import 'components/_section.scss';
+@import 'components/_button.scss';
+@import 'components/_scrollbar.scss';
+
+
