@@ -8,13 +8,16 @@ $border-width: 2px!default;
 
 /* colours */
 /* base */
-$primary-color: rgb(0,0,0)!default;
-$secondary-color: rgb(255,255,255)!default;
+$primary-color: rgb(10,10,10)!default;
+$secondary-color: rgb(240,240,240)!default;
+$tertiary-color: rgb(80,80,80)!default;
+$quaternary-color: rgb(160,160,160)!default;
 
 /* utility */
 $success-color: rgb(19,190,108)!default;
 $warning-color: rgb(224,107,27)!default;
 $error-color: rgb(196,78,78)!default;
+$disabled-color: rgb(125,125,125)!default;
 
 /* fonts */
 $primary-font-color: $primary-color;
@@ -27,10 +30,13 @@ $error-font-color: $error-color;
 /* background */
 $primary-background-color: $primary-color;
 $secondary-background-color: $secondary-color;
+$tertiary-background-color: $tertiary-color;
+$quaternary-background-color: $quaternary-color;
 
 $success-background-color: rgba($success-color, .25);
 $warning-background-color: rgba($warning-color, .25);
 $error-background-color: rgba($error-color, .25);
+$disabled-background-color: rgba($disabled-color, .25);
 
 /* typography */
 $primary-font-stack: 'Helvetica-Neue', sans-serif!default;
