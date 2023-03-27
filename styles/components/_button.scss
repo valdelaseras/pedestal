@@ -17,6 +17,9 @@
 /* base disabled button */
 .btn.btn-disabled {
     pointer-events: none;
+    background-color: $disabled-background-color;
+    border-color: $disabled-background-color;
+    color: $disabled-font-color;
 }
 
 .btn.btn-disabled:hover,
@@ -30,42 +33,44 @@
 /* primary button */
 .btn.btn-primary {
     background-color: $primary-background-color;
-    border-color: $primary-background-color;
+    border-color: $secondary-background-color;
     color: $secondary-font-color;
 }
 
-.btn.btn-primary:active {}
+.btn.btn-primary:active {
+    background-color: $primary-background-color;
+    border-color: $primary-background-color;
+}
 
 .btn.btn-primary:hover,
 .btn.btn-primary:focus,
 .btn.btn-primary:focus-within {
     background-color: $secondary-background-color;
-    border-color: $secondary-background-color;
+    border-color: $primary-background-color;
     color: $primary-font-color;
 }
-
-.btn.btn-disabled.btn-primary {}
 
 
 
 /* secondary button */
 .btn.btn-secondary {
-    background-color: transparent;
-    border-color: $secondary-background-color;
+    background-color: $secondary-background-color;
+    border-color: $primary-background-color;
     color: $primary-font-color;
 }
 
-.btn.btn-secondary:active {}
+.btn.btn-secondary:active {
+    background-color: $secondary-background-color;
+    border-color: $secondary-background-color;
+}
 
 .btn.btn-secondary:hover,
 .btn.btn-secondary:focus,
 .btn.btn-secondary:focus-within {
-    background-color: $secondary-background-color;
+    background-color: $primary-background-color;
     border-color: $secondary-background-color;
-    color: $primary-font-color;
+    color: $secondary-font-color;
 }
-
-.btn.btn-disabled.btn-secondary {}
 
 
 

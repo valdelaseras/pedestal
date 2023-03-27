@@ -1,25 +1,27 @@
 /* variables */
+/* base */
 /* colours */
 /* base */
+/* utility */
 /* fonts */
 /* background */
 /* typography */
 /* theme */
 /* theme primary */
 .theme-primary {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  background-color: rgb(10, 10, 10);
+  color: rgb(240, 240, 240);
 }
 
 /* theme secondary */
 .theme-secondary {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background-color: rgb(240, 240, 240);
+  color: rgb(10, 10, 10);
 }
 
 /* base */
 body {
-  color: rgb(0, 0, 0);
+  color: rgb(10, 10, 10);
   font-family: "Helvetica-Neue", sans-serif;
 }
 
@@ -75,6 +77,11 @@ p, span {
   padding: 20px;
 }
 
+@media only screen and (min-width: 1440px) {
+  .content {
+    padding: 40px;
+  }
+}
 /* grid  */
 .grid {
   height: 100%;
@@ -150,7 +157,7 @@ ul {
   display: inline-block;
   text-align: center;
   width: auto;
-  padding: 20px 40px;
+  padding: 10px 40px;
   border-width: 2px;
   border-style: solid;
 }
@@ -162,6 +169,9 @@ ul {
 /* base disabled button */
 .btn.btn-disabled {
   pointer-events: none;
+  background-color: rgba(125, 125, 125, 0.25);
+  border-color: rgba(125, 125, 125, 0.25);
+  color: rgb(125, 125, 125);
 }
 
 .btn.btn-disabled:hover,
@@ -171,8 +181,50 @@ ul {
 }
 
 /* primary button */
+.btn.btn-primary {
+  background-color: rgb(10, 10, 10);
+  border-color: rgb(240, 240, 240);
+  color: rgb(240, 240, 240);
+}
+
+.btn.btn-primary:active {
+  background-color: rgb(10, 10, 10);
+  border-color: rgb(10, 10, 10);
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.btn.btn-primary:focus-within {
+  background-color: rgb(240, 240, 240);
+  border-color: rgb(10, 10, 10);
+  color: rgb(10, 10, 10);
+}
+
 /* secondary button */
+.btn.btn-secondary {
+  background-color: rgb(240, 240, 240);
+  border-color: rgb(10, 10, 10);
+  color: rgb(10, 10, 10);
+}
+
+.btn.btn-secondary:active {
+  background-color: rgb(240, 240, 240);
+  border-color: rgb(240, 240, 240);
+}
+
+.btn.btn-secondary:hover,
+.btn.btn-secondary:focus,
+.btn.btn-secondary:focus-within {
+  background-color: rgb(10, 10, 10);
+  border-color: rgb(240, 240, 240);
+  color: rgb(240, 240, 240);
+}
+
 /* compact button */
+.btn.btn-compact {
+  padding: 10px;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 4px;
@@ -180,16 +232,16 @@ ul {
 
 /* track */
 ::-webkit-scrollbar-track {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(10, 10, 10);
 }
 
 /* handle */
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(240, 240, 240);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(10, 10, 10);
 }
 
 /*# sourceMappingURL=index.css.map */
