@@ -3,8 +3,8 @@
 A simple, basic SCSS 'pedestal' to accelerate new ( private ) project setups in our companies 
 'house style' structure.
 
+npm
 ```
-npm i pedestal
 ```
 
 [npm]()
