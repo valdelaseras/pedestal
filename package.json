@@ -8,9 +8,9 @@
   },
   "scripts": {
     "serve": "http-server .",
-    "sass-watch": "sass --watch styles/import.scss styles/index.css",
+    "sass-watch": "sass --watch scss/index.scss css/index.css",
     "dev": "npm run serve & npm run sass-watch",
-    "sass-compile": "sass styles/import.scss styles/index.css"
+    "sass-compile": "sass scss/index.scss css/index.css"
   },
   "keywords": [
     "scss"
