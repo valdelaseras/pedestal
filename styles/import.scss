@@ -3,11 +3,11 @@
 $breakpoint: 1440px!default;
 $padding: 20px!default;
 $grid: 80vw!default;
-$font-size: 16px!default;
 $border-width: 1px!default;
 $scrollbar-width: 4px!default;
 $border-radius: 0!default;
-$heading-base-font-size: 1.5!default;
+$font-size: 16px!default;
+$heading-base-font-size: 1.5!default; // assuming 'rem' as suffix
 
 /* utility */
 $golden-ratio: 1.618;
@@ -29,7 +29,7 @@ $warning-color: rgb(224,107,27)!default;
 $error-color: rgb(196,78,78)!default;
 $disabled-color: rgb(125,125,125)!default;
 
-/* fonts */
+/* font */
 $primary-font-color: $secondary-color;
 $secondary-font-color: $primary-color;
 
@@ -50,10 +50,12 @@ $quaternary-background-color: $quaternary-color;
 $primary-accent-background-color: $primary-accent-color;
 $secondary-accent-background-color: $secondary-accent-color;
 
-$success-background-color: rgba($success-color, .25);
-$warning-background-color: rgba($warning-color, .25);
-$error-background-color: rgba($error-color, .25);
-$disabled-background-color: rgba($disabled-color, .25);
+$background-alpha: .25!default;
+
+$success-background-color: rgba($success-color,$background-alpha);
+$warning-background-color: rgba($warning-color,$background-alpha);
+$error-background-color: rgba($error-color,$background-alpha);
+$disabled-background-color: rgba($disabled-color,$background-alpha);
 
 /* typography */
 $primary-font-stack: 'Helvetica-Neue', sans-serif!default;
@@ -70,6 +72,7 @@ $secondary-font-stack: 'Helvetica', sans-serif!default;
 
 /* layout */
 @import 'layout/_column.scss';
+@import 'layout/_position.scss';
 @import 'layout/_content.scss';
 @import 'layout/_grid.scss';
 
@@ -77,6 +80,7 @@ $secondary-font-stack: 'Helvetica', sans-serif!default;
 @import 'components/_article.scss';
 @import 'components/_section.scss';
 @import 'components/_button.scss';
+@import 'components/_card.scss';
 @import 'components/_list.scss';
 @import 'components/_select.scss';
 @import 'components/_input.scss';

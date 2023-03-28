@@ -13,7 +13,7 @@ body {
 /* p, span */
 p, span {
     font-size: $font-size;
-    line-height: 1.5rem;
+    line-height: #{$golden-ratio}rem;
 }
 
 /* headings */

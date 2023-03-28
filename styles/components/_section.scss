@@ -5,6 +5,6 @@
 
 @media only screen and ( min-width: $breakpoint ){
     .section {
-        padding: calc( $padding * 2 );
+        padding: calc( $padding * $golden-ratio );
     }
 }

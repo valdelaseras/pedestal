@@ -1,0 +1,34 @@
+/* card */
+.card {
+    box-sizing: border-box;
+    padding: $padding;
+}
+
+
+
+/* card bordered */
+.card-bordered {
+    border-style: solid;
+    border-width: $border-width;
+    border-radius: $border-radius;
+}
+
+
+
+/* card header */
+//.card-header {}
+
+
+
+/* card title */
+.card-title {
+    margin-top: 0;
+}
+
+
+
+/* card footer */
+/* card footer with btn-list-row */
+.card-footer .btn-list-row li {
+    padding-bottom: 0;
+}

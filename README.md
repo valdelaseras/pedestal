@@ -2,9 +2,9 @@
 
 A very simple, basic SCSS 'pedestal' to accelerate new project setups. 
 
-Pedestal provides a solid and consistent base to work from, creating a super easy-to-implement 
+Pedestal provides a solid and systematic base to work from, creating a super easy-to-implement 
 responsive, flexible and consistent layout. Some basic variables are provided that can be easily 
-overridden and to start your project near hassle-free.
+overridden and to start a new project hassle-free.
 
 
 ## installation
@@ -26,11 +26,15 @@ Overwrite the following variables for quick and simple customisation:
 $breakpoint             /* 1440px!default */
 $padding                /* 20px!default */
 $grid                   /* 80vw!default */
-$font-size              /* 16px!default */
 $border-width           /* 2px!default */
 $scrollbar-width        /* 4px!default */
 $border-radius          /* 0!default */
-$heading-base-font-size /* 1.5!default */
+
+/* typography */
+$font-size              /* 16px!default */
+$heading-base-font-size /* 1.5!default, assuming 'rem' as suffix */
+$primary-font-stack     /* 'Helvetica-Neue', sans-serif!default */
+$secondary-font-stack   /* 'Helvetica', sans-serif!default */
 
 /* colours */
 /* base */
@@ -49,8 +53,7 @@ $warning-color          /* rgb(224,107,27)!default */
 $error-color            /* rgb(196,78,78)!default */
 $disabled-color         /* rgb(125,125,125)!default */
 
-/* typography */
-$primary-font-stack     /* 'Helvetica-Neue', sans-serif!default */
-$secondary-font-stack   /* 'Helvetica', sans-serif!default */
+/* alpha value for utility element backgrounds derived from the utility base colours */
+$background-alpha       /* .25!default */
 ```
 

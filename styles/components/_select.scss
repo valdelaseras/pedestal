@@ -1,0 +1,12 @@
+/* select */
+.select {
+    padding: calc( $padding / ( $golden-ratio * 2 ) ) calc( $padding / ( $golden-ratio * 2 ) );
+    width: auto;
+    border-radius: $border-radius;
+}
+
+label + .select {
+    margin-left: calc( $padding / ( $golden-ratio * 2 ) );
+}
+
+

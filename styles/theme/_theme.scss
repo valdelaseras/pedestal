@@ -10,6 +10,8 @@
     color: $secondary-font-color;
 }
 
+
+
 /* primary accent theme */
 .primary-accent-theme {
     background-color: $primary-accent-background-color;
@@ -22,6 +24,31 @@
     color: $primary-font-color;
 }
 
+
+
+/* success theme */
+.success-theme {
+    background-color: $success-background-color;
+    color: $success-font-color;
+    border-color: $success-color;
+}
+
+/* warning theme */
+.warning-theme {
+    background-color: $warning-background-color;
+    color: $warning-font-color;
+    border-color: $warning-color;
+}
+
+/* error theme */
+.error-theme {
+    background-color: $error-background-color;
+    color: $error-font-color;
+    border-color: $error-color;
+}
+
+
+
 /* font primary */
 .primary-font-color {
     color: $primary-font-color;
@@ -32,6 +59,8 @@
     color: $secondary-font-color;
 }
 
+
+
 /* font accent primary */
 .primary-accent-font-color {
     color: $primary-accent-font-color;
@@ -41,3 +70,4 @@
 .secondary-accent-font-color {
     color: $secondary-accent-font-color;
 }
+
