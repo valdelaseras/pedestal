@@ -3,7 +3,7 @@
     display: inline-block;
     text-align: center;
     width: auto;
-    padding: calc( $padding / 2 ) calc( $padding * 2 );
+    padding: calc( $padding / 4 ) calc( $padding * 2 );
     border-width: $border-width;
     border-style: solid;
 }
@@ -31,17 +31,17 @@
 
 
 /* primary button */
-.btn.btn-primary {
+.btn-primary {
     background-color: $primary-accent-background-color;
     border-color: $primary-accent-background-color;
     color: $primary-font-color;
 }
 
-.btn.btn-primary:active,
-.btn.btn-primary:hover,
-.btn.btn-primary:focus,
-.btn.btn-primary:focus-within {
-    background-color: $secondary-background-color;
+.btn-primary:active,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:focus-within {
+    background-color: transparent;
     border-color: $primary-accent-background-color;
     color: $primary-accent-font-color;
 }
@@ -49,28 +49,25 @@
 
 
 /* secondary button */
-.btn.btn-secondary {
+.btn-secondary {
+    background-color: transparent;
+    border-color: $secondary-accent-background-color;
+    color: $secondary-accent-font-color;
+}
+
+.btn-secondary:active,
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:focus-within {
     background-color: $secondary-accent-background-color;
     border-color: $secondary-accent-background-color;
     color: $primary-font-color;
 }
 
-.btn.btn-secondary:active,
-.btn.btn-secondary:hover,
-.btn.btn-secondary:focus,
-.btn.btn-secondary:focus-within {
-    background-color: $secondary-background-color;
-    border-color: $secondary-accent-background-color;
-    color: $secondary-accent-font-color;;
-}
-
 
 
 /* compact button */
-.btn.btn-compact {
-    padding: calc( $padding / 2 );
+.btn-compact {
+    padding: calc( $padding / 4 ) calc( $padding / 2 );
 }
-
-
-
 

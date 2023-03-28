@@ -1,3 +1,9 @@
+$h5-size: $heading-base-font-size;
+$h4-size: calc( $h5-size * $golden-ratio );
+$h3-size: calc( $h4-size * $golden-ratio );
+$h2-size: calc( $h3-size * $golden-ratio );
+$h1-size: calc( $h2-size * $golden-ratio );
+
 /* base */
 body {
     color: $primary-font-color;
@@ -10,3 +16,14 @@ p, span {
     line-height: 1.5rem;
 }
 
+/* headings */
+h1, h2, h3, h4, h5 {
+    font-weight: 800;
+    margin: #{calc( $h5-size / 2 )}rem 0;
+}
+
+h1 { font-size: #{$h1-size}rem; }
+h2 { font-size: #{$h2-size}rem; }
+h3 { font-size: #{$h3-size}rem; }
+h4 { font-size: #{$h4-size}rem; }
+h5 { font-size: #{$h5-size}rem; }

@@ -1,0 +1,14 @@
+/* list inline */
+.list-row li {
+    display: inline-block;
+    padding-bottom: calc( $padding / 2  );
+}
+
+.list-row li:not(:last-child) {
+    padding-right: calc( $padding / 4  );
+}
+
+/* list column */
+.list-column li {
+    padding-bottom: calc( $padding / 2  );
+}

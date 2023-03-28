@@ -1,11 +1,43 @@
-/* theme primary */
-.theme-primary {
+/* primary theme */
+.primary-theme {
     background-color: $primary-background-color;
+    color: $primary-font-color;
+}
+
+/* secondary theme */
+.secondary-theme {
+    background-color: $secondary-background-color;
     color: $secondary-font-color;
 }
 
-/* theme secondary */
-.theme-secondary {
-    background-color: $secondary-background-color;
+/* primary accent theme */
+.primary-accent-theme {
+    background-color: $primary-accent-background-color;
     color: $primary-font-color;
+}
+
+/* secondary accent theme */
+.secondary-accent-theme {
+    background-color: $secondary-accent-background-color;
+    color: $primary-font-color;
+}
+
+/* font primary */
+.primary-font-color {
+    color: $primary-font-color;
+}
+
+/* font secondary */
+.secondary-font-color {
+    color: $secondary-font-color;
+}
+
+/* font accent primary */
+.primary-accent-font-color {
+    color: $primary-accent-font-color;
+}
+
+/* font accent secondary */
+.secondary-accent-font-color {
+    color: $secondary-accent-font-color;
 }

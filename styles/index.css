@@ -1,27 +1,61 @@
 /* variables */
 /* base */
+/* utility */
 /* colours */
 /* base */
+/* accent */
 /* utility */
 /* fonts */
 /* background */
 /* typography */
 /* theme */
-/* theme primary */
-.theme-primary {
+/* primary theme */
+.primary-theme {
   background-color: rgb(10, 10, 10);
   color: rgb(240, 240, 240);
 }
 
-/* theme secondary */
-.theme-secondary {
+/* secondary theme */
+.secondary-theme {
   background-color: rgb(240, 240, 240);
   color: rgb(10, 10, 10);
 }
 
+/* primary accent theme */
+.primary-accent-theme {
+  background-color: rgb(37, 127, 210);
+  color: rgb(240, 240, 240);
+}
+
+/* secondary accent theme */
+.secondary-accent-theme {
+  background-color: rgb(199, 50, 137);
+  color: rgb(240, 240, 240);
+}
+
+/* font primary */
+.primary-font-color {
+  color: rgb(240, 240, 240);
+}
+
+/* font secondary */
+.secondary-font-color {
+  color: rgb(10, 10, 10);
+}
+
+/* font accent primary */
+.primary-accent-font-color {
+  color: rgb(37, 127, 210);
+}
+
+/* font accent secondary */
+.secondary-accent-font-color {
+  color: rgb(199, 50, 137);
+}
+
 /* base */
 body {
-  color: rgb(10, 10, 10);
+  color: rgb(240, 240, 240);
   font-family: "Helvetica-Neue", sans-serif;
 }
 
@@ -31,6 +65,67 @@ p, span {
   line-height: 1.5rem;
 }
 
+/* headings */
+h1, h2, h3, h4, h5 {
+  font-weight: 800;
+  margin: 0.75rem 0;
+}
+
+h1 {
+  font-size: 10.2802891047rem;
+}
+
+h2 {
+  font-size: 6.353701548rem;
+}
+
+h3 {
+  font-size: 3.926886rem;
+}
+
+h4 {
+  font-size: 2.427rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+/* base */
+/* body */
+body {
+  background-color: rgb(10, 10, 10);
+}
+
+/* body */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* lists */
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+/* mobile only */
+@media only screen and (min-width: 1440px) {
+  .mobile-only {
+    display: none;
+  }
+}
+/* desktop only */
+.desktop-only {
+  display: none;
+}
+
+@media only screen and (min-width: 1440px) {
+  .desktop-only {
+    display: inline-block;
+  }
+}
 /* layout */
 /* column  */
 @media only screen and (min-width: 1440px) {
@@ -101,47 +196,7 @@ p, span {
   height: 0;
 }
 
-/* base */
-/* body */
-body {
-  padding: 0;
-  margin: 0;
-}
-
-/* lists */
-ul {
-  margin: 0;
-  padding-left: 0;
-  list-style-type: none;
-}
-
-/* mobile only */
-@media only screen and (min-width: 1440px) {
-  .mobile-only {
-    display: none;
-  }
-}
-/* desktop only */
-.desktop-only {
-  display: none;
-}
-
-@media only screen and (min-width: 1440px) {
-  .desktop-only {
-    display: inline-block;
-  }
-}
 /* components */
-/* article  */
-.article {
-  padding: 20px;
-}
-
-@media only screen and (min-width: 1440px) {
-  .article {
-    padding: 40px;
-  }
-}
 /* section  */
 .section {
   padding: 20px;
@@ -157,8 +212,8 @@ ul {
   display: inline-block;
   text-align: center;
   width: auto;
-  padding: 10px 40px;
-  border-width: 2px;
+  padding: 5px 40px;
+  border-width: 1px;
   border-style: solid;
 }
 
@@ -171,7 +226,7 @@ ul {
   pointer-events: none;
   background-color: rgba(125, 125, 125, 0.25);
   border-color: rgba(125, 125, 125, 0.25);
-  color: rgb(125, 125, 125);
+  color: rgba(125, 125, 125, 0.5);
 }
 
 .btn.btn-disabled:hover,
@@ -181,50 +236,60 @@ ul {
 }
 
 /* primary button */
-.btn.btn-primary {
-  background-color: rgb(10, 10, 10);
-  border-color: rgb(240, 240, 240);
+.btn-primary {
+  background-color: rgb(37, 127, 210);
+  border-color: rgb(37, 127, 210);
   color: rgb(240, 240, 240);
 }
 
-.btn.btn-primary:active {
-  background-color: rgb(10, 10, 10);
-  border-color: rgb(10, 10, 10);
-}
-
-.btn.btn-primary:hover,
-.btn.btn-primary:focus,
-.btn.btn-primary:focus-within {
-  background-color: rgb(240, 240, 240);
-  border-color: rgb(10, 10, 10);
-  color: rgb(10, 10, 10);
+.btn-primary:active,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:focus-within {
+  background-color: transparent;
+  border-color: rgb(37, 127, 210);
+  color: rgb(37, 127, 210);
 }
 
 /* secondary button */
-.btn.btn-secondary {
-  background-color: rgb(240, 240, 240);
-  border-color: rgb(10, 10, 10);
-  color: rgb(10, 10, 10);
+.btn-secondary {
+  background-color: transparent;
+  border-color: rgb(199, 50, 137);
+  color: rgb(199, 50, 137);
 }
 
-.btn.btn-secondary:active {
-  background-color: rgb(240, 240, 240);
-  border-color: rgb(240, 240, 240);
-}
-
-.btn.btn-secondary:hover,
-.btn.btn-secondary:focus,
-.btn.btn-secondary:focus-within {
-  background-color: rgb(10, 10, 10);
-  border-color: rgb(240, 240, 240);
+.btn-secondary:active,
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:focus-within {
+  background-color: rgb(199, 50, 137);
+  border-color: rgb(199, 50, 137);
   color: rgb(240, 240, 240);
 }
 
 /* compact button */
-.btn.btn-compact {
-  padding: 10px;
+.btn-compact {
+  padding: 5px 10px;
 }
 
+/* list inline */
+.list-row li {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.list-row li:not(:last-child) {
+  padding-right: 5px;
+}
+
+/* list column */
+.list-column li {
+  padding-bottom: 10px;
+}
+
+/* text */
+/* checkbox */
+/* radio */
 /* width */
 ::-webkit-scrollbar {
   width: 4px;
@@ -241,7 +306,7 @@ ul {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(10, 10, 10);
+  background-color: rgb(37, 127, 210);
 }
 
 /*# sourceMappingURL=index.css.map */

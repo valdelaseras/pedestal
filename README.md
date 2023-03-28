@@ -31,6 +31,8 @@ $border-width           /* 2px!default */
 $scrollbar-width        /* 4px!default */
 $border-radius          /* 0!default */
 
+$heading-base-font-size /* 1.5!default */
+
 /* colours */
 /* base */
 $primary-color          /* rgb(0,0,0)!default */
@@ -38,6 +40,7 @@ $secondary-color        /* rgb(255,255,255)!default */
 $tertiary-color         /* rgb(128,128,128)!default */
 $quaternary-color       /* rgb(66,66,66)!default */
 
+/* accent */
 $primary-accent-color   /* rgb(37, 127, 210)!default */
 $secondary-accent-color /* rgb(199, 50, 137)!default */
 
