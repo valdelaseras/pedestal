@@ -19,7 +19,7 @@ p, span {
 /* headings */
 h1, h2, h3, h4, h5 {
     font-weight: 800;
-    margin: #{calc( $h5-size / 2 )}rem 0;
+    margin: #{calc( $h5-size / $golden-ratio )}rem 0;
 }
 
 h1 { font-size: #{$h1-size}rem; }

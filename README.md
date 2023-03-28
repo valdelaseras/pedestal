@@ -13,7 +13,7 @@ overridden and to start your project near hassle-free.
 npm i @valdelaseras/pedestal
 ```
 
-[npm](https://www.npmjs.com/package/@valdelaseras/pedestal)
+find it on [npm](https://www.npmjs.com/package/@valdelaseras/pedestal)
 
 ---
 
