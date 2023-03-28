@@ -30,7 +30,6 @@ $font-size              /* 16px!default */
 $border-width           /* 2px!default */
 $scrollbar-width        /* 4px!default */
 $border-radius          /* 0!default */
-
 $heading-base-font-size /* 1.5!default */
 
 /* colours */
