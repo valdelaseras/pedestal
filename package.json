@@ -1,6 +1,6 @@
 {
   "name": "@valdelaseras/pedestal",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple, basic SCSS 'scaffold' to accelerate new project setups",
   "repository": {
     "type": "git",
