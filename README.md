@@ -2,9 +2,9 @@
 
 A very simple, basic SCSS 'pedestal' to accelerate new project setups. 
 
-Pedestal provides a solid and systematic base to work from, creating a super easy-to-implement 
-responsive, flexible and consistent layout. Some basic variables are provided that can be easily 
-overridden and to start a new project hassle-free.
+Pedestal provides a solid base to work from, creating a super easy-to-implement responsive, flexible and 
+consistent layout. Some basic variables are provided that can be easily overridden and to quick start a new 
+project hassle-free.    
 
 
 ## installation
