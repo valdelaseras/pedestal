@@ -41,8 +41,8 @@ The values in this example below are Pedestals defaults. Those you do not intend
     /* typography */
     $font-size: 16px,
     $heading-base-font-size: 1.5, /* assuming 'rem' as suffix */
-    $primary-font-stack: #{'Helvetica-Neue'}, Arial, sans-serif,
-    $secondary-font-stack: Helvetica, Arial, sans-serif,
+    $primary-font-stack: #{Helvetica-Neue, Arial, sans-serif},
+    $secondary-font-stack: #{Helvetica, Arial, sans-serif},
     
     /* colours */
     /* Please use rgb values */

@@ -58,5 +58,5 @@ $error-background-color: rgba($error-color,$background-alpha);
 $disabled-background-color: rgba($disabled-color,$background-alpha);
 
 /* typography */
-$primary-font-stack: 'Helvetica-Neue', Arial, sans-serif!default;
-$secondary-font-stack: Helvetica, Arial, sans-serif!default;
+$primary-font-stack: #{Helvetica-Neue, Arial, sans-serif}!default;
+$secondary-font-stack: #{Helvetica, Arial, sans-serif}!default;
