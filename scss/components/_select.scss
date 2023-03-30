@@ -2,12 +2,19 @@
 select {
     padding: calc( $padding / ( $golden-ratio * 2 ) ) calc( $padding / ( $golden-ratio * 2 ) );
     width: 100%;
-    border-width: $border-width;
-    border-radius: $border-radius;
-    border-style: solid;
+    font-size: $font-size;
+    border: none;
 
-    &.primary-theme { border-color: $secondary-color; }
-    &.secondary-theme { border-color: $primary-color; }
+    &.primary-theme {
+        &.bordered {
+            border-color: $secondary-color;
+        }
+    }
+    &.secondary-theme {
+        &.bordered {
+            border-color: $primary-color;
+        }
+    }
 }
 
 select:hover {

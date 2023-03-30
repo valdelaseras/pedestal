@@ -1,12 +1,20 @@
 textarea {
-    border-radius: $border-radius;
-    border-width: $border-width;
     box-sizing: border-box;
     -webkit-appearance: none;
     appearance: none;
     width: 100%;
-    padding: calc( $padding / ( $golden-ratio * 2 ) );
+    padding: calc($padding / ($golden-ratio * 2));
+    font-size: $font-size;
+    border: none;
 
-    &.primary-theme { border-color: $secondary-color; }
-    &.secondary-theme { border-color: $primary-color; }
+    &.primary-theme {
+        &.bordered {
+            border-color: $secondary-color;
+        }
+    }
+    &.secondary-theme {
+        &.bordered {
+            border-color: $primary-color;
+        }
+    }
 }

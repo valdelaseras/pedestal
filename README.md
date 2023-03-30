@@ -1,18 +1,16 @@
-# Pedestal [WIP]
+# Pedestal [WIP] 
 
 A basic SCSS 'pedestal' to accelerate new project setups. 
 
 Pedestal provides a style foundation to work from, with an easy-to-implement responsive, flexible, 
 consistent layout and clean overall look. Some variables are provided that can be overridden, 
-then just sprinkle your own awesome, custom styles on top °˖✧◝(⁰▿⁰)◜✧˖°     
-
----
+then just sprinkle your own awesome, custom styles on top °˖✧◝(⁰▿⁰)◜✧˖°
 
 ## Installation
 
 [pedestal](https://www.npmjs.com/package/@valdelaseras/pedestal) | [sass](https://www.npmjs.com/package/sass)
 
-Install sass if you haven't already:
+Install Sass in your project if you haven't already:
 
 ```
 npm i sass
@@ -26,13 +24,11 @@ Add the following script to your package.json:
 },
 ```
 
-Install __@valdelaseras/pedestal__:
+Install Pedestal:
 
 ```
 npm i @valdelaseras/pedestal
 ```
-
----
 
 ## Guide
 
@@ -107,7 +103,7 @@ this pattern.
 ### Typography
 
 Heading sizes are automatically calculated by the configurable `$heading-base-font-size`. The value for this variable is 
-applied to `<h5>` elements, and subsequently multiplied by 1.618, the `$golden-ratio`, the further we go 'up':
+applied to `<h5>` elements, and subsequently multiplied by 1.618, the `$golden-ratio`, the further we go 'up' like so:
 
 ```scss
 $h5-size: $heading-base-font-size;
@@ -122,8 +118,6 @@ h3 { font-size: #{$h3-size}rem; }
 h4 { font-size: #{$h4-size}rem; }
 h5 { font-size: #{$h5-size}rem; }
 ```
-
----
 
 ### Templating
 
@@ -275,8 +269,6 @@ the grid if desired.
 Paddings are calculated across all the stylesheets based on the provided `$padding` value. Most of the time
 the `$golden-ratio` variable ( 1.618 ) is used to automatically create consistent and visually pleasing whitespace and 
 paddings within elements, by either multiplying or dividing the configurable `$padding` value.
-
----
 
 ### Theming
 

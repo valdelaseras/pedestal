@@ -1,10 +1,9 @@
 /* base */
 input {
-    border-radius: $border-radius;
-    border-width: $border-width;
-    border-style: solid;
     -webkit-appearance: none;
     appearance: none;
+    font-size: $font-size;
+    border: none;
 }
 
 
@@ -30,13 +29,18 @@ label.block-label {
 input[type="text"] {
     width: 100%;
     box-sizing: border-box;
-    border-radius: $border-radius;
-    border-width: $border-width;
-    border-style: solid;
     padding: calc( $padding / ( $golden-ratio * 2 ) );
 
-    &.primary-theme { border-color: $secondary-color; }
-    &.secondary-theme { border-color: $primary-color; }
+    &.primary-theme {
+        &.bordered {
+            border-color: $secondary-color;
+        }
+    }
+    &.secondary-theme {
+        &.bordered {
+            border-color: $primary-color;
+        }
+    }
 }
 
 
@@ -46,12 +50,19 @@ input[type="radio" i] {
     border-radius: 50%;
 }
 
+/* checkbox */
+input[type="checkbox" i]{
+    border-radius: $border-radius;
+}
+
 
 
 /* checkbox & radio */
 input[type="checkbox" i],
 input[type="radio" i] {
     margin-left: 0;
+    border-width: $border-width;
+    border-style: solid;
 }
 
 input[type="radio"].large-radio,
