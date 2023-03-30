@@ -1,4 +1,4 @@
-# pedestal
+# Pedestal
 
 A basic SCSS 'pedestal' to accelerate new project setups. 
 
@@ -8,11 +8,11 @@ then just sprinkle your awesome custom styles on top :)
 
 ---
 
-## installation
+## Installation
 
 [pedestal](https://www.npmjs.com/package/@valdelaseras/pedestal) | [sass](https://www.npmjs.com/package/sass)
 
-Install __sass__ if you haven't already:
+Install sass if you haven't already:
 
 ```
 npm i sass
@@ -34,22 +34,29 @@ npm i @valdelaseras/pedestal
 
 ---
 
-## guide
+## Guide
 
-1. [overriding variables](#overriding-variables)
-2. [templating](#templating)
-    - [page structure](#page-structure)
-    - [column system](#column-system)
-    - [grid system](#grid-system)
-    - [components](#components)
-        - [button](#button)
-        - [card](#card)
-        - [form](#form)
-        - [input](#input)
-        - [select](#select)
-        - [textarea](#textarea)
+1. [Overriding variables](#overriding-variables)
+   - [Colours](#colours)
+2. [Templating](#templating)
+    - [Main structure](#main-structure)
+    - [Column system](#column-system)
+    - [Grid system](#grid-system)
+    - [Components](#components)
+        - [Button](#button)
+        - [Card](#card)
+        - [Form](#form)
+        - [Input](#input)
+        - [Select](#select)
+        - [Textarea](#textarea)
+3. [Theming](#theming)
+    - [Base](#base)
+    - [Accent](#accent)
+    - [Font base](#font-base)
+    - [Font accent](#font-accent)
+    - [Utility](#utility)
 
-### overriding variables
+### Overriding variables
 
 Copy and paste the codeblock below to your __index.scss__ file and overwrite Pedestal variables 
 as desired. The values below are Pedestals defaults. Those you do not intend to override, can simply be removed.
@@ -96,24 +103,25 @@ as desired. The values below are Pedestals defaults. Those you do not intend to 
 );
 ```
 
+### Colours
+It is strongly advised to pick 2 highly contrasting, "muted" colours for `$primary-color` and `$secondary-color` ( e.g.
+black and white ), and then two contrasting, "fun" colours for `$primary-accent-color` and `$secondary-accent-color`. 
+The colours in these two sets are used in combination with one other in [themes](#theming), so it works best following
+this pattern.
+
 ---
 
-### templating
+### Templating
 
 Pedestal is designed to minimally 'pollute' your templates with classes ( kind of like the opposite of Tailwind ),
 but there are a few recommended template structures to follow in order for Pedestal to work nicely. I promise it 
 will be a good as it will make Pedestal work optimally, but also nudges you to stick to semantically correct HTML.
 
-#### page structure
+#### Main structure
 
-A general page outline should follow the structure below: 
+A general main element outline should follow the structure below: 
 
 ```html
-<header>
-    <nav role="navigation">
-        <!-- navigation goes here -->
-    </nav>
-</header>
 <main>
     <article>
         <!-- section A -->
@@ -138,15 +146,12 @@ A general page outline should follow the structure below:
             </div>
         </section>
         
-        <!-- ...etc-->
+        <!-- section C ...etc-->
     </article>
 </main>
-<footer>
-    <!-- footer content goes here -->
-</footer>
 ```
 
-#### column system
+#### Column system
 
 In Pedestal, everything is ordered into columns. Note that whatever column combination you use, on screen widths
 below your configured `$breakpoint` value, the columns will always stack vertically. This means you never have to worry
@@ -237,7 +242,7 @@ When you have the desired column structure, wrap your content in `<div class="co
 is going to ensure you will always have consistent padding between content vertically and horizontally, on small or 
 large devices.
 
-#### grid system
+#### Grid system
 
 The `$grid` value you configer will set the default width of your content, center aligned, on screen widths with a 
 minimum of your `$breakpoint` value. Nest it within `<section>` elements, or leave it out of a section to break out of
@@ -251,14 +256,110 @@ the grid if desired.
 </section>
 ```
 
-#### components
+#### Components
 
-##### button
-##### card
-##### form
-##### input
-##### select
-##### textarea
+##### Button
+##### Card
+##### Form
+##### Input
+##### Select
+##### Textarea
 
+---
+
+### Theming
+
+The following theme classes are available by default to apply to elements like `section`, `form`, 
+`card`, etc., setting you up with a variety of themes and options while using just a few colours.
+Too many colours in a palette can be problematic, so consider not to add too many on top.
+
+The primary- and corresponding secondary themes are generally the inverse of one another. 
+
+#### Base
+```scss
+.primary-theme {
+    background-color: $primary-background-color;
+    color: $primary-font-color;
+    &.bordered {
+        border-color: $secondary-color;
+    }
+}
+
+.secondary-theme {
+    background-color: $secondary-background-color;
+    color: $secondary-font-color;
+    &.bordered {
+        border-color: $primary-color;
+    }
+}
+```
+
+#### Accent 
+```scss
+.primary-accent-theme {
+    background-color: $primary-accent-background-color;
+    color: $primary-font-color;
+    &.bordered {
+        border-color: $secondary-color;
+    }
+}
+
+.secondary-accent-theme {
+    background-color: $secondary-accent-background-color;
+    color: $primary-font-color;
+    &.bordered {
+        border-color: $secondary-color;
+    }
+}
+```
+
+#### Font base
+```scss
+.primary-font-color {
+    color: $primary-font-color;
+}
+
+.secondary-font-color {
+    color: $secondary-font-color;
+}
+```
+
+#### Font accent
+```scss
+.primary-accent-font-color {
+    color: $primary-accent-font-color;
+}
+
+.secondary-accent-font-color {
+    color: $secondary-accent-font-color;
+}
+```
+
+#### Utility 
+```scss
+.success-theme {
+    background-color: $success-background-color;
+    color: $success-font-color;
+    &.bordered {
+        border-color: $success-color;
+    }
+}
+
+.warning-theme {
+    background-color: $warning-background-color;
+    color: $warning-font-color;
+    &.bordered {
+        border-color: $warning-color;
+    }
+}
+
+.error-theme {
+    background-color: $error-background-color;
+    color: $error-font-color;
+    &.bordered {
+        border-color: $error-color;
+    }
+}
+```
 
 
