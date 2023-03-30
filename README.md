@@ -238,7 +238,7 @@ The following column classes are available by default:
 |--------|------------|------------------|-----------------|--------------|--------------|----------------|---------------|
 | 100%   | 50%        | 33.33%           | 25%             | 38%          | 62%          | 66.66%         | 75%           |
 
-When you have the desired column structure, wrap your content in `<div class="content">` as in the sample above. This 
+When you have the desired column structure, wrap your content in `<div class="content"></div>` as in the sample above. This 
 is going to ensure you will always have consistent padding between content vertically and horizontally, on small or 
 large devices.
 
@@ -269,11 +269,12 @@ the grid if desired.
 
 ### Theming
 
-The following theme classes are available by default to apply to elements like `section`, `form`, 
-`card`, etc., setting you up with a variety of themes and options while using just a few colours.
+The following theme classes are available by default to apply to elements like `section`, `form` and
+`card`, setting you up with a variety of themes and options while using just a few colours.
 Too many colours in a palette can be problematic, so consider not to add too many on top.
 
-The primary- and corresponding secondary themes are generally the inverse of one another. 
+The primary- and corresponding secondary themes are generally the inverse of one another, hence it is advised to
+pick contrasting sets of [colours](#colours). 
 
 #### Base
 ```scss
