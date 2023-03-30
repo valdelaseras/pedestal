@@ -31,7 +31,9 @@ form {
 
 /* form group */
 .form-group {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: calc( $padding / 2 );
 }
 
 

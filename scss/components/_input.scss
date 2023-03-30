@@ -9,18 +9,8 @@ input {
 
 
 /* label */
-input + label {
-    margin-left: calc( $padding / ( $golden-ratio * 2 ) );
-}
-
-/* block label */
-label.block-label {
-    display: block;
-    margin: calc( 1rem / $golden-ratio ) 0;
-
-    & input + label.block-label {
-        margin-left: 0;
-    }
+label > input {
+    margin-right: calc( $padding / 2 );
 }
 
 
@@ -29,7 +19,7 @@ label.block-label {
 input[type="text"] {
     width: 100%;
     box-sizing: border-box;
-    padding: calc( $padding / ( $golden-ratio * 2 ) );
+    padding: calc( $padding / ( $golden-ratio * 2 ));
 
     &.primary-theme {
         &.bordered {
@@ -48,11 +38,13 @@ input[type="text"] {
 /* radio */
 input[type="radio" i] {
     border-radius: 50%;
+    transform: translateY(3px);
 }
 
 /* checkbox */
 input[type="checkbox" i]{
     border-radius: $border-radius;
+    transform: translateY(6px);
 }
 
 
@@ -92,5 +84,12 @@ input[type="radio"]:hover,
 input[type="checkbox"]:hover {
     cursor: pointer;
 }
+
+
+
+
+
+
+
 
 

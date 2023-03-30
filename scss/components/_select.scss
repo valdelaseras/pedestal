@@ -21,11 +21,4 @@ select:hover {
     cursor: pointer;
 }
 
-label + select {
-    margin-left: calc( $padding / ( $golden-ratio * 2 ) );
-}
-
-label.block-label + select {
-    margin-left: 0;
-}
 
