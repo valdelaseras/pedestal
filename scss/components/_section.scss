@@ -1,10 +1,10 @@
 /* section  */
-.section {
+section {
     padding: $padding;
 }
 
 @media only screen and ( min-width: $breakpoint ){
-    .section {
+    section {
         padding: calc( $padding * $golden-ratio );
     }
 }
