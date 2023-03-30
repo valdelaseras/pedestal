@@ -1,0 +1,42 @@
+/* form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: $padding;
+
+    &.primary-theme,
+    &.secondary-theme,
+    &.primary-accent-theme,
+    &.secondary-accent-theme,
+    &.success-theme,
+    &.warning-theme,
+    &.error-theme {
+        padding: $padding;
+    }
+
+    &.bordered {
+        padding: $padding;
+
+        &.primary-theme { border-color: $secondary-color; }
+        &.secondary-theme { border-color: $primary-color; }
+        &.primary-accent-theme { border-color: $secondary-color; }
+        &.secondary-accent-theme { border-color: $secondary-color; }
+        &.success-theme { border-color: $success-color; }
+        &.warning-theme { border-color: $warning-color; }
+        &.error-theme { border-color: $error-color; }
+    }
+}
+
+
+
+/* form group */
+.form-group {
+    display: block;
+}
+
+
+
+/* form footer */
+.form-footer .btn-list-row li {
+    padding-bottom: 0;
+}
