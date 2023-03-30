@@ -42,13 +42,6 @@ npm i @valdelaseras/pedestal
     - [Main structure](#main-structure)
     - [Column system](#column-system)
     - [Grid system](#grid-system)
-    - [Components](#components)
-        - [Button](#button)
-        - [Card](#card)
-        - [Form](#form)
-        - [Input](#input)
-        - [Select](#select)
-        - [Textarea](#textarea)
 3. [Theming](#theming)
     - [Base](#base)
     - [Accent](#accent)
@@ -255,15 +248,6 @@ the grid if desired.
     </div>
 </section>
 ```
-
-#### Components
-
-##### Button
-##### Card
-##### Form
-##### Input
-##### Select
-##### Textarea
 
 ---
 
