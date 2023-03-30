@@ -8,11 +8,11 @@ $h1-size: calc( $h2-size * $golden-ratio );
 body {
     color: $primary-font-color;
     font-family: $primary-font-stack;
+    font-size: $font-size;
 }
 
 /* p, span */
 p, span {
-    font-size: $font-size;
     line-height: #{$golden-ratio}rem;
 }
 
@@ -22,8 +22,17 @@ h1, h2, h3, h4, h5 {
     margin: #{calc( $h5-size / $golden-ratio )}rem 0;
 }
 
-h1 { font-size: #{$h1-size}rem; }
-h2 { font-size: #{$h2-size}rem; }
-h3 { font-size: #{$h3-size}rem; }
-h4 { font-size: #{$h4-size}rem; }
-h5 { font-size: #{$h5-size}rem; }
+// h1 { font-size: #{$h1-size}rem; }
+// h2 { font-size: #{$h2-size}rem; }
+// h3 { font-size: #{$h3-size}rem; }
+// h4 { font-size: #{$h4-size}rem; }
+// h5 { font-size: #{$heading-base-font-size}rem; }
+
+@media only screen and ( min-width: $breakpoint ) {
+    h1 { font-size: #{$h1-size}rem; }
+    h2 { font-size: #{$h2-size}rem; }
+    h3 { font-size: #{$h3-size}rem; }
+    h4 { font-size: #{$h4-size}rem; }
+    h5 { font-size: #{$h5-size}rem; }
+}
+

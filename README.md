@@ -1,10 +1,10 @@
-# Pedestal
+# Pedestal [WIP]
 
 A basic SCSS 'pedestal' to accelerate new project setups. 
 
 Pedestal provides a style foundation to work from, with an easy-to-implement responsive, flexible, 
 consistent layout and clean overall look. Some variables are provided that can be overridden, 
-then just sprinkle your awesome custom styles on top :)     
+then just sprinkle your own awesome, custom styles on top °˖✧◝(⁰▿⁰)◜✧˖°     
 
 ---
 
@@ -38,10 +38,12 @@ npm i @valdelaseras/pedestal
 
 1. [Overriding variables](#overriding-variables)
    - [Colours](#colours)
+   - [Typography](#typography)
 2. [Templating](#templating)
     - [Main structure](#main-structure)
     - [Column system](#column-system)
     - [Grid system](#grid-system)
+    - [Paddings](#paddings)
 3. [Theming](#theming)
     - [Base](#base)
     - [Accent](#accent)
@@ -101,6 +103,25 @@ It is strongly advised to pick 2 highly contrasting, "muted" colours for `$prima
 black and white ), and then two contrasting, "fun" colours for `$primary-accent-color` and `$secondary-accent-color`. 
 The colours in these two sets are used in combination with one other in [themes](#theming), so it works best following
 this pattern.
+
+### Typography
+
+Heading sizes are automatically calculated by the configurable `$heading-base-font-size`. The value for this variable is 
+applied to `<h5>` elements, and subsequently multiplied by 1.618, the `$golden-ratio`, the further we go 'up':
+
+```scss
+$h5-size: $heading-base-font-size;
+$h4-size: calc( $h5-size * $golden-ratio );
+$h3-size: calc( $h4-size * $golden-ratio );
+$h2-size: calc( $h3-size * $golden-ratio );
+$h1-size: calc( $h2-size * $golden-ratio );
+
+h1 { font-size: #{$h1-size}rem; }
+h2 { font-size: #{$h2-size}rem; }
+h3 { font-size: #{$h3-size}rem; }
+h4 { font-size: #{$h4-size}rem; }
+h5 { font-size: #{$h5-size}rem; }
+```
 
 ---
 
@@ -248,6 +269,12 @@ the grid if desired.
     </div>
 </section>
 ```
+
+#### Paddings
+
+Paddings are calculated across all the stylesheets based on the provided `$padding` value. Most of the time
+the `$golden-ratio` variable ( 1.618 ) is used to automatically create consistent and visually pleasing whitespace and 
+paddings within elements, by either multiplying or dividing the configurable `$padding` value.
 
 ---
 
