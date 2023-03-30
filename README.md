@@ -56,8 +56,8 @@ The values in this example below are Pedestals defaults. Those you do not intend
     $primary-accent-color: rgb(37, 127, 210),
     $secondary-accent-color: rgb(199, 50, 137),
     
-    $primary-accent-font-color: $primary-accent-color,
-    $secondary-accent-font-color: $secondary-accent-color,
+    $primary-accent-font-color: rgb(37, 127, 210),
+    $secondary-accent-font-color: rgb(199, 50, 137),
     
     /* utility */
     $success-color: rgb(19,190,108),
