@@ -39,7 +39,7 @@ The values in this example below are Pedestals defaults. Those you do not intend
     $border-radius: 0,
     
     /* typography */
-    $font-size: 16,
+    $font-size: 16px,
     $heading-base-font-size: 1.5, /* assuming 'rem' as suffix */
     $primary-font-stack: #{'Helvetica-Neue'}, Arial, sans-serif,
     $secondary-font-stack: Helvetica, Arial, sans-serif,
