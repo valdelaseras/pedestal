@@ -33,7 +33,7 @@ The values in this example below are Pedestals defaults. Those you do not intend
     /* base */
     $breakpoint: 1440px,
     $padding: 20px,
-    $grid: 80vw,              
+    $grid: 80vw, /* for min-width $breakpoint screens */              
     $border-width: 2px,
     $scrollbar-width: 4px,
     $border-radius: 0,
@@ -41,8 +41,8 @@ The values in this example below are Pedestals defaults. Those you do not intend
     /* typography */
     $font-size: 16,
     $heading-base-font-size: 1.5, /* assuming 'rem' as suffix */
-    $primary-font-stack: #{'Helvetica-Neue', sans-serif},
-    $secondary-font-stack: #{'Helvetica', sans-serif},
+    $primary-font-stack: #{'Helvetica-Neue'}, Arial, sans-serif,
+    $secondary-font-stack: Helvetica, Arial, sans-serif,
     
     /* colours */
     /* Please use rgb values */
@@ -55,6 +55,9 @@ The values in this example below are Pedestals defaults. Those you do not intend
     /* accent */
     $primary-accent-color: rgb(37, 127, 210),
     $secondary-accent-color: rgb(199, 50, 137),
+    
+    $primary-accent-font-color: $primary-accent-color,
+    $secondary-accent-font-color: $secondary-accent-color,
     
     /* utility */
     $success-color: rgb(19,190,108),

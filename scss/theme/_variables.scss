@@ -2,12 +2,12 @@
 /* base */
 $breakpoint: 1440px!default;
 $padding: 20px!default;
-$grid: 80vw!default;
+$grid: 80vw!default; /* for min-width $breakpoint screens */
 $border-width: 1px!default;
 $scrollbar-width: 4px!default;
 $border-radius: 0!default;
 $font-size: 16px!default;
-$heading-base-font-size: 1.5!default; // assuming 'rem' as suffix
+$heading-base-font-size: 1.5!default; /* assuming 'rem' as suffix */
 
 /* utility */
 $golden-ratio: 1.618;
@@ -20,8 +20,8 @@ $tertiary-color: rgb(80,80,80)!default;
 $quaternary-color: rgb(160,160,160)!default;
 
 /* accent */
-$primary-accent-color: rgb(37, 127, 210) !default;
-$secondary-accent-color: rgb(199, 50, 137) !default;
+$primary-accent-color: rgb(37, 127, 210)!default;
+$secondary-accent-color: rgb(199, 50, 137)!default;
 
 /* utility */
 $success-color: rgb(19,190,108)!default;
@@ -33,8 +33,8 @@ $disabled-color: rgb(125,125,125)!default;
 $primary-font-color: $secondary-color;
 $secondary-font-color: $primary-color;
 
-$primary-accent-font-color: $primary-accent-color;
-$secondary-accent-font-color: $secondary-accent-color;
+$primary-accent-font-color: $primary-accent-color!default;
+$secondary-accent-font-color: $secondary-accent-color!default;
 
 $success-font-color: $success-color;
 $warning-font-color: $warning-color;
@@ -58,5 +58,5 @@ $error-background-color: rgba($error-color,$background-alpha);
 $disabled-background-color: rgba($disabled-color,$background-alpha);
 
 /* typography */
-$primary-font-stack: 'Helvetica-Neue', sans-serif!default;
-$secondary-font-stack: 'Helvetica', sans-serif!default;
+$primary-font-stack: 'Helvetica-Neue', Arial, sans-serif!default;
+$secondary-font-stack: Helvetica, Arial, sans-serif!default;

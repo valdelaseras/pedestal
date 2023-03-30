@@ -5,6 +5,10 @@
     border-radius: $border-radius;
 }
 
+.select:hover {
+    cursor: pointer;
+}
+
 label + .select {
     margin-left: calc( $padding / ( $golden-ratio * 2 ) );
 }

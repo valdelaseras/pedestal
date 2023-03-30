@@ -1,13 +1,30 @@
+/* bordered base */
+.bordered {
+    border-width: $border-width;
+    border-radius: $border-radius;
+    border-style: solid;
+}
+
+
+
 /* primary theme */
 .primary-theme {
     background-color: $primary-background-color;
     color: $primary-font-color;
+
+    &.bordered {
+        border-color: $secondary-color;
+    }
 }
 
 /* secondary theme */
 .secondary-theme {
     background-color: $secondary-background-color;
     color: $secondary-font-color;
+
+    &.bordered {
+        border-color: $primary-color;
+    }
 }
 
 
@@ -16,12 +33,20 @@
 .primary-accent-theme {
     background-color: $primary-accent-background-color;
     color: $primary-font-color;
+
+    &.bordered {
+        border-color: $secondary-color;
+    }
 }
 
 /* secondary accent theme */
 .secondary-accent-theme {
     background-color: $secondary-accent-background-color;
     color: $primary-font-color;
+
+    &.bordered {
+        border-color: $secondary-color;
+    }
 }
 
 
@@ -30,21 +55,30 @@
 .success-theme {
     background-color: $success-background-color;
     color: $success-font-color;
-    border-color: $success-color;
+
+    &.bordered {
+        border-color: $success-color;
+    }
 }
 
 /* warning theme */
 .warning-theme {
     background-color: $warning-background-color;
     color: $warning-font-color;
-    border-color: $warning-color;
+
+    &.bordered {
+        border-color: $warning-color;
+    }
 }
 
 /* error theme */
 .error-theme {
     background-color: $error-background-color;
     color: $error-font-color;
-    border-color: $error-color;
+
+    &.bordered {
+        border-color: $error-color;
+    }
 }
 
 

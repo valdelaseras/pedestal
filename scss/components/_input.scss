@@ -1,14 +1,55 @@
+/* base */
+input {
+    border-radius: $border-radius;
+    border-width: $border-width;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+label + input {
+    margin-left: calc( $padding / ( $golden-ratio * 2 ) );
+}
+
+input + label {
+    margin-left: calc( $padding / ( $golden-ratio * 2 ) );
+}
+
+
+
 /* text */
 input[type="text"] {
-
+    padding: calc( $padding / ( $golden-ratio * 2 ) );
 }
+
+
 
 /* checkbox */
+input[type="radio"],
 input[type="checkbox"] {
-
+    height: calc( 1rem + calc( $padding / ( $golden-ratio * 2 ) ));
+    width: calc( 1rem + calc( $padding / ( $golden-ratio * 2 ) ));
 }
+
+input[type="checkbox" i] {
+    transform: translateY( calc( $font-size / 2 ) );
+}
+
+input[type="radio" i]:checked,
+input[type="checkbox" i]:checked {
+    &.primary-theme { background-color: $secondary-background-color; }
+    &.secondary-theme { background-color: $primary-background-color; }
+}
+
+input[type="radio"]:hover,
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+
 
 /* radio */
-input[type="radio"] {
-
+input[type="radio" i] {
+    border-radius: 50%;
+    transform: translateY( calc( $font-size / 4 ) );
 }
+
