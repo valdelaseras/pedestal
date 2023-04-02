@@ -124,7 +124,7 @@ h5 { font-size: #{$h5-size}rem; }
 Pedestal is designed to minimally 'pollute' your templates with classes ( kind of like the opposite of TailWind ), 
 so sprinkling your own styles on top will be easier to do and maintain. However, there are a few recommended template 
 structures to follow in order for Pedestal to work nicely. I promise it will be good, as it will make Pedestal work 
-optimally but also nudges you to stick to semantically correct HTML.
+optimally but also nudges you to stick to semantic HTML.
 
 #### Main structure
 

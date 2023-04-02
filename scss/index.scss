@@ -1,5 +1,7 @@
+@forward "theme/_variables.scss";
+
 /* theme */
-@import 'theme/_variables';
+@import 'theme/_variables.scss';
 @import 'theme/_theme.scss';
 @import 'theme/_typography.scss';
 

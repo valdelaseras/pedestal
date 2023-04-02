@@ -10,9 +10,9 @@
 
 /* handle */
 ::-webkit-scrollbar-thumb {
-    background-color: $secondary-background-color;
+    background-color: $primary-accent-background-color;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: $primary-accent-background-color;
+    background-color: $secondary-accent-background-color;
 }
