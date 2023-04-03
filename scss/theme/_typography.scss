@@ -18,6 +18,7 @@ p, span {
 
 /* headings */
 h1, h2, h3, h4, h5 {
+//     @TODO: maybe increase margin a bit
     margin: #{calc( $h5-size / $golden-ratio )}rem 0;
     word-break: break-all;
 }
