@@ -94,6 +94,19 @@ as desired. The values below are Pedestals defaults. Those you do not intend to 
 );
 ```
 
+To use the variables directly in your custom SCSS, import the package at the top of your stylesheet and
+use it like so:
+
+```scss 
+@use '../../../node_modules/@valdelaseras/pedestal/scss/index.scss' as pedestal;
+
+#some-section {
+    h1 {
+        -webkit-text-stroke: 4px pedestal.$secondary-accent-font-color;
+    }
+}
+```
+
 ### Colours
 It is strongly advised to pick 2 highly contrasting, "muted" colours for `$primary-color` and `$secondary-color` ( e.g.
 black and white ), and then two contrasting, "fun" colours for `$primary-accent-color` and `$secondary-accent-color`. 
