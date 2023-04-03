@@ -1,0 +1,16 @@
+/* lists */
+.list-row,
+.list-column {
+    display: flex;
+    gap: calc( $padding / ( $golden-ratio * 2 )  );
+}
+
+/* list row */
+.list-row {
+    flex-wrap: wrap;
+}
+
+/* list column */
+.list-column {
+    flex-direction: column;
+}

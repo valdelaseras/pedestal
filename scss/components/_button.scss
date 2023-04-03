@@ -110,22 +110,3 @@
     color: $primary-font-color;
 }
 
-
-
-/* btn list inline */
-.btn-list-row li {
-    display: inline-block;
-    padding-bottom: calc( $padding / $golden-ratio  );
-}
-
-.btn-list-row li:not(:last-child) {
-    padding-right: calc( $padding / ( $golden-ratio * 2 )  );
-}
-
-
-
-/* btn list column */
-.btn-list-column li:not(:last-child) {
-    padding-bottom: calc( $padding / $golden-ratio  );
-}
-
