@@ -83,7 +83,7 @@ The values below are Pedestals defaults. Those you do not intend to override, ca
     $secondary-accent-font-color: rgb(199, 50, 137),
     
     $font-size: 16px,
-    $heading-base-font-size: 1.5, /* assuming 'rem' as suffix */
+    $heading-base-font-size: 1, /* assuming 'rem' as suffix */
   
     //* utility *//
     $success-color: rgb(19,190,108),
