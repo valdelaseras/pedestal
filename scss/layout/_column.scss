@@ -1,20 +1,20 @@
 /* column  */
+.column {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+}
+
+.column::after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 @media only screen and ( min-width: $breakpoint ) {
-    .column {
-        width: 100%;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        float: left;
-    }
-
-    .column::after {
-        content: "";
-        clear: both;
-        display: block;
-        height: 0;
-        visibility: hidden;
-    }
-
     .column.phi.a {
         width: 38%;
     }

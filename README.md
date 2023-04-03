@@ -134,14 +134,14 @@ h5 { font-size: #{$h5-size}rem; }
 
 ### Templating
 
-Pedestal is designed to minimally 'pollute' your templates with classes ( kind of like the opposite of TailWind ), 
-so sprinkling your own styles on top will be easier to do and maintain. However, there are a few recommended template 
-structures to follow in order for Pedestal to work nicely. I promise it will be good, as it will make Pedestal work 
-optimally but also nudges you to stick to semantic HTML.
+Pedestal is designed to minimally 'pollute' your templates with classes, so sprinkling your own styles on top will be 
+easier to do and maintain. However, there are a few recommended template structures to follow in order for Pedestal to
+work nicely. I promise it will be good, as it will make Pedestal work optimally but also nudges you to stick to semantic 
+template structures.
 
 #### Main structure
 
-A general main element outline should follow the structure below: 
+A general main element outline should follow the basic structure below: 
 
 ```html
 <main>
@@ -176,8 +176,16 @@ A general main element outline should follow the structure below:
 #### Column system
 
 In Pedestal, everything is ordered into columns. Note that whatever column combination you use, on screen widths
-below your configured `$breakpoint` value, the columns will always stack vertically. This means you never have to worry
+below your configured `$breakpoint` value, the columns will stack vertically by default. This means you never have to worry
 about responsiveness and don't need to do any extra work for small or larger devices. 
+
+If you do wish to also have multiple columns on mobile devices or tablet devices, you can simply add additional scss like:
+
+```scss
+.column.two.mobile {
+    width: 50%;
+}
+```
 
 You can write intuitive column structures in any combination like so:
 
@@ -259,6 +267,10 @@ The following column classes are available by default:
 | column | column two | column three (a) | column four (a) | column phi a | column phi b | column three b | column four b |
 |--------|------------|------------------|-----------------|--------------|--------------|----------------|---------------|
 | 100%   | 50%        | 33.33%           | 25%             | 38%          | 62%          | 66.66%         | 75%           |
+
+
+Columns stack vertically by default on screens below `$breakpoint`, but will align to the left in a row from that 
+breakpoint without any additional, custom SCSS.
 
 When you have the desired column structure, wrap your content in `<div class="content"></div>` as in the sample above. This 
 is going to ensure you will always have consistent padding between content vertically and horizontally, on small or 
