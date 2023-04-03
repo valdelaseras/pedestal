@@ -1,18 +1,15 @@
-/* variables */
-/* base */
+///* variables *///
+
+//* base *//
 $breakpoint: 1440px!default;
 $padding: 20px!default;
 $grid: 80vw!default; /* for min-width $breakpoint screens */
 $border-width: 1px!default;
 $border-radius: 0!default;
 $scrollbar-width: 4px!default;
-$font-size: 16px!default;
-$heading-base-font-size: 1!default; /* in 'rem' */
-
-/* utility */
 $golden-ratio: 1.618;
 
-/* colours */
+//* colours *//
 /* base */
 $primary-color: rgb(10,10,10)!default;
 $secondary-color: rgb(240,240,240)!default;
@@ -23,13 +20,19 @@ $quaternary-color: rgb(160,160,160)!default;
 $primary-accent-color: rgb(37, 127, 210)!default;
 $secondary-accent-color: rgb(199, 50, 137)!default;
 
-/* utility */
-$success-color: rgb(19,190,108)!default;
-$warning-color: rgb(224,107,27)!default;
-$error-color: rgb(196,78,78)!default;
-$disabled-color: rgb(125,125,125)!default;
+/* background */
+$primary-background-color: $primary-color;
+$secondary-background-color: $secondary-color;
+$tertiary-background-color: $tertiary-color;
+$quaternary-background-color: $quaternary-color;
 
-/* font */
+$primary-accent-background-color: $primary-accent-color;
+$secondary-accent-background-color: $secondary-accent-color;
+
+//* typography *//
+$primary-font-stack: #{Helvetica-Neue, Arial, sans-serif}!default;
+$secondary-font-stack: #{Helvetica, Arial, sans-serif}!default;
+
 $primary-font-color: $secondary-color;
 $secondary-font-color: $primary-color;
 
@@ -41,14 +44,14 @@ $warning-font-color: $warning-color;
 $error-font-color: $error-color;
 $disabled-font-color: rgba($disabled-color, .5);
 
-/* background */
-$primary-background-color: $primary-color;
-$secondary-background-color: $secondary-color;
-$tertiary-background-color: $tertiary-color;
-$quaternary-background-color: $quaternary-color;
+$font-size: 16px!default;
+$heading-base-font-size: 1!default; /* in 'rem' */
 
-$primary-accent-background-color: $primary-accent-color;
-$secondary-accent-background-color: $secondary-accent-color;
+//* utility *//
+$success-color: rgb(19,190,108)!default;
+$warning-color: rgb(224,107,27)!default;
+$error-color: rgb(196,78,78)!default;
+$disabled-color: rgb(125,125,125)!default;
 
 $background-alpha: .25!default;
 
@@ -56,9 +59,4 @@ $success-background-color: rgba($success-color,$background-alpha);
 $warning-background-color: rgba($warning-color,$background-alpha);
 $error-background-color: rgba($error-color,$background-alpha);
 $disabled-background-color: rgba($disabled-color,$background-alpha);
-
-/* typography */
-$primary-font-stack: #{Helvetica-Neue, Arial, sans-serif}!default;
-$secondary-font-stack: #{Helvetica, Arial, sans-serif}!default;
-
 

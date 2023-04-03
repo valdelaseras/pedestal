@@ -1,10 +1,10 @@
 # Pedestal [WIP] 
 
-A basic SCSS 'pedestal' to accelerate new project setups. 
+An SCSS/SMACCS 'pedestal' to accelerate your workflow. 
 
-Pedestal provides a style foundation to work from, with an easy-to-implement responsive, flexible, 
-consistent layout and clean overall look. Some variables are provided that can be overridden, 
-then just sprinkle your own awesome, custom styles on top °˖✧◝(⁰▿⁰)◜✧˖°
+Pedestal provides a solid UI foundation, with an automatically responsive, flexible and consistent layout and 
+clean overall look. Quickly configure some variables to adjust the base styles, then you can focus on the fun stuff 
+and easily add your own unique flair by sprinkling your custom styles on top °˖✧◝(⁰▿⁰)◜✧˖°
 
 ## Installation
 
@@ -33,8 +33,8 @@ npm i @valdelaseras/pedestal
 ## Guide
 
 1. [Overriding variables](#overriding-variables)
-   - [Colours](#colours)
-   - [Typography](#typography)
+    - [Colours](#colours)
+    - [Typography](#typography)
 2. [Templating](#templating)
     - [Main structure](#main-structure)
     - [Column system](#column-system)
@@ -49,27 +49,22 @@ npm i @valdelaseras/pedestal
 
 ### Overriding variables
 
-Copy and paste the codeblock below to your __index.scss__ file and overwrite Pedestal variables 
-as desired. The values below are Pedestals defaults. Those you do not intend to override, can simply be removed.
+Copy and paste the codeblock below to your __index.scss__ and overwrite Pedestal variable values as desired. 
+The values below are Pedestals defaults. Those you do not intend to override, can simply be removed.
 
 ```scss
 @use '../../node_modules/@valdelaseras/pedestal/scss/index.scss' with (
-    /* base */
+    ///* variables *///
+
+    //* base *//
     $breakpoint: 1440px,
     $padding: 20px,
-    $grid: 80vw, /* for min-width $breakpoint screens */              
-    $border-width: 2px,
-    $scrollbar-width: 4px,
+    $grid: 80vw, /* for min-width $breakpoint screens */
+    $border-width: 1px,
     $border-radius: 0,
-    
-    /* typography */
-    $font-size: 16px,
-    $heading-base-font-size: 1.5, /* assuming 'rem' as suffix */
-    $primary-font-stack: #{Helvetica-Neue, Arial, sans-serif},
-    $secondary-font-stack: #{Helvetica, Arial, sans-serif},
-    
-    /* colours */
-    /* Please use rgb values */
+    $scrollbar-width: 4px,
+   
+    //* colours ( use rgb ) *//
     /* base */
     $primary-color: rgb(0,0,0),
     $secondary-color: rgb(255,255,255),
@@ -80,10 +75,17 @@ as desired. The values below are Pedestals defaults. Those you do not intend to 
     $primary-accent-color: rgb(37, 127, 210),
     $secondary-accent-color: rgb(199, 50, 137),
     
+    //* typography *//
+    $primary-font-stack: #{Helvetica-Neue, Arial, sans-serif},
+    $secondary-font-stack: #{Helvetica, Arial, sans-serif},
+    
     $primary-accent-font-color: rgb(37, 127, 210),
     $secondary-accent-font-color: rgb(199, 50, 137),
     
-    /* utility */
+    $font-size: 16px,
+    $heading-base-font-size: 1.5, /* assuming 'rem' as suffix */
+  
+    //* utility *//
     $success-color: rgb(19,190,108),
     $warning-color: rgb(224,107,27),
     $error-color: rgb(196,78,78),
