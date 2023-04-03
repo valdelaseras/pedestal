@@ -29,6 +29,19 @@ $quaternary-background-color: $quaternary-color;
 $primary-accent-background-color: $primary-accent-color;
 $secondary-accent-background-color: $secondary-accent-color;
 
+//* utility *//
+$success-color: rgb(19,190,108)!default;
+$warning-color: rgb(224,107,27)!default;
+$error-color: rgb(196,78,78)!default;
+$disabled-color: rgb(125,125,125)!default;
+
+$background-alpha: .25!default;
+
+$success-background-color: rgba($success-color,$background-alpha);
+$warning-background-color: rgba($warning-color,$background-alpha);
+$error-background-color: rgba($error-color,$background-alpha);
+$disabled-background-color: rgba($disabled-color,$background-alpha);
+
 //* typography *//
 $primary-font-stack: #{Helvetica-Neue, Arial, sans-serif}!default;
 $secondary-font-stack: #{Helvetica, Arial, sans-serif}!default;
@@ -46,17 +59,4 @@ $disabled-font-color: rgba($disabled-color, .5);
 
 $font-size: 16px!default;
 $heading-base-font-size: 1!default; /* in 'rem' */
-
-//* utility *//
-$success-color: rgb(19,190,108)!default;
-$warning-color: rgb(224,107,27)!default;
-$error-color: rgb(196,78,78)!default;
-$disabled-color: rgb(125,125,125)!default;
-
-$background-alpha: .25!default;
-
-$success-background-color: rgba($success-color,$background-alpha);
-$warning-background-color: rgba($warning-color,$background-alpha);
-$error-background-color: rgba($error-color,$background-alpha);
-$disabled-background-color: rgba($disabled-color,$background-alpha);
 

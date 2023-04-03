@@ -9,7 +9,7 @@
   "scripts": {
     "serve": "http-server .",
     "sass-watch": "sass --watch scss/index.scss css/index.css",
-    "dev": "npm run serve & npm run sass-watch",
+    "dev": "npm run sass-watch & npm run serve",
     "sass-compile": "sass scss/index.scss css/index.css"
   },
   "keywords": [
