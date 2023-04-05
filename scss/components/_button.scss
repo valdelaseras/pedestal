@@ -1,3 +1,13 @@
+@mixin hover-button-border($color) {
+    border-color: $color;
+}
+
+@mixin hover-button-background($color) {
+    background-color: $color;
+}
+
+
+
 /* base button */
 .button {
     display: inline-block;
@@ -8,6 +18,8 @@
     border-radius: $border-radius;
     border-style: solid;
     border-color: transparent;
+    transition-duration: $transition-duration;
+    transform-style: $transition-style;
 
     &.bordered {
         border-color: currentColor;
@@ -46,6 +58,35 @@
 .button-wide {
     padding: calc( $padding / 2 - $border-width ) calc( $padding * 2 );
 }
+
+
+
+/* button hover */
+.button.theme-primary:hover,
+.button.theme-secondary:hover,
+.button.accent-theme-primary:hover,
+.button.accent-theme-secondary:hover,
+.button.theme-success:hover,
+.button.theme-warning:hover,
+.button.theme-error:hover {
+    @include hover-button-background(transparent);
+    @include hover-button-border(currentColor);
+}
+
+.button.theme-primary.bordered:hover,
+.button.theme-secondary.bordered:hover,
+.button.accent-theme-primary.bordered:hover,
+.button.accent-theme-secondary.bordered:hover,
+.button.theme-success.bordered:hover,
+.button.theme-warning.bordered:hover,
+.button.theme-error.bordered:hover {
+    @include hover-button-border(transparent);
+}
+
+
+
+
+
 
 
 

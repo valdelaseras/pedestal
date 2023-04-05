@@ -9,14 +9,18 @@ $border-radius: 0!default;
 $scrollbar-width: 4px!default;
 $golden-ratio: 1.618;
 
+//* animations *//
+$transition-duration: 100ms!default;
+$transition-style: ease!default;
+
 //* colours *//
 /* base */
 $color-primary: rgb(10,10,10)!default;
 $color-secondary: rgb(240,240,240)!default;
 
 /* accent */
-$accent-color-primary: rgb(37, 127, 210)!default;
-$accent-color-secondary: rgb(199, 50, 137)!default;
+$accent-color-primary: rgb(69,180,134)!default;
+$accent-color-secondary: rgb(180,69,115)!default;
 
 /* background */
 $background-color-primary: $color-primary;

@@ -40,12 +40,6 @@ npm i @valdelaseras/pedestal
     - [Column system](#column-system)
     - [Grid system](#grid-system)
     - [Paddings](#paddings)
-3. [Theming](#theming)
-    - [Base](#base)
-    - [Accent](#accent)
-    - [Font base](#font-base)
-    - [Font accent](#font-accent)
-    - [Utility](#utility)
 
 ### Overriding variables
 
@@ -63,6 +57,10 @@ The values below are Pedestals defaults. Those you do not intend to override, ca
     $border-width: 1px,
     $border-radius: 0,
     $scrollbar-width: 4px,
+    
+    //* animations *//
+    $transition-duration: 200ms,
+    $transition-style: ease,
    
     //* colours (rgba) *//
     /* base */
@@ -70,15 +68,15 @@ The values below are Pedestals defaults. Those you do not intend to override, ca
     $color-secondary: rgb(255,255,255),
     
     /* accent */
-    $accent-color-primary: rgb(37, 127, 210),
-    $accent-color-secondary: rgb(199, 50, 137),
+    $accent-color-primary: rgb(69,180,134),
+    $accent-color-secondary: rgb(180,69,115),
     
     //* typography *//
     $font-stack-primary: #{Helvetica-Neue, Arial, sans-serif},
     $font-stack-secondary: #{Helvetica, Arial, sans-serif},
     
-    $accent-font-color-primary: rgb(37, 127, 210),
-    $accent-font-color-secondary: rgb(199, 50, 137),
+    $accent-font-color-primary: rgb(69,180,134),
+    $accent-font-color-secondary: rgb(180,69,115),
     
     $font-size: 16px,
     $heading-base-font-size: 1, /* assuming 'rem' as suffix */
@@ -107,11 +105,13 @@ use it like so:
 }
 ```
 
-### Colours
-It is strongly advised to pick 2 highly contrasting, "muted" colours for `$color-primary` and `$color-secondary` ( e.g.
-black and white ), and then two contrasting, "fun" colours for `$accent-color-primary` and `$accent-color-secondary`. 
-The colours in these two sets are used in combination with one other in [themes](#theming), so it works best following
-this pattern.
+### Colors
+
+It is strongly advised to pick 2 highly contrasting, "muted" colors for `$color-primary` and `$color-secondary` ( e.g.
+black and white ), and then two contrasting, "fun" colors for `$accent-color-primary` and `$accent-color-secondary`. 
+The colors in these two sets are used in combination with one other, so it works best following this pattern. Of course,
+you are free to add as many colors as you like, but you have to add some of your own CSS in that case.
+
 
 ### Typography
 
@@ -283,126 +283,11 @@ minimum of your `$breakpoint` value. Nest it within `<section>` elements, or lea
 the grid if desired.
 
 ```html
-<section class="primary-theme">
+<section class="theme-primary">
     <div class="grid">
         <!-- columns go here -->
     </div>
 </section>
-```
-
-#### Paddings
-
-Paddings are calculated across all the stylesheets based on the provided `$padding` value. Most of the time
-the `$golden-ratio` variable ( 1.618 ) is used to automatically create consistent and visually pleasing whitespace and 
-paddings within elements, by either multiplying or dividing the configurable `$padding` value.
-
-### Theming
-
-The following theme classes are available by default to apply to elements like `section`, `form` and
-`card`, setting you up with a variety of themes and options while using just a few colours.
-Too many colours in a palette can be problematic, so you might consider not to add too many on top, although that
-is complete up to you.
-
-The primary- and corresponding secondary themes are generally the inverse of one another, hence it is advised to
-pick contrasting sets of [colours](#colours). 
-
-#### Base
-
-```scss
-.theme-primary {
-   background-color: $background-color-primary;
-   color: $font-color-primary;
-
-   &.bordered {
-      border-color: $color-secondary;
-   }
-}
-
-.theme-secondary {
-   background-color: $background-color-secondary;
-   color: $font-color-secondary;
-
-   &.bordered {
-      border-color: $color-primary;
-   }
-}
-```
-
-#### Accent
-
-```scss
-.accent-theme-primary {
-   background-color: $accent-background-color-primary;
-   color: $font-color-primary;
-
-   &.bordered {
-      border-color: $color-secondary;
-   }
-}
-
-.accent-theme-secondary {
-   background-color: $accent-background-color-secondary;
-   color: $font-color-primary;
-
-   &.bordered {
-      border-color: $color-secondary;
-   }
-}
-```
-
-#### Font base
-
-```scss
-.font-color-primary {
-   color: $font-color-primary;
-}
-
-.font-color-secondary {
-   color: $font-color-secondary;
-}
-```
-
-#### Font accent
-
-```scss
-.accent-font-color-primary {
-   color: $accent-font-color-primary;
-}
-
-.accent-font-color-secondary {
-   color: $accent-font-color-secondary;
-}
-```
-
-#### Utility
-
-```scss
-.theme-success {
-   background-color: $background-color-success;
-   color: $font-color-success;
-
-   &.bordered {
-      border-color: $color-success;
-   }
-}
-
-.theme-warning {
-   background-color: $background-color-warning;
-   color: $font-color-warning;
-
-   &.bordered {
-      border-color: $color-warning;
-   }
-}
-
-.theme-error {
-   background-color: $background-color-error;
-   color: $font-color-error;
-
-   &.bordered {
-      border-color: $color-error;
-   }
-}
 ```
 
 
