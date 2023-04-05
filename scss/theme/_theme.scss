@@ -9,124 +9,124 @@
 
 
 
-/* primary theme */
-.primary-theme {
-    background-color: $primary-background-color;
-    color: $primary-font-color;
+/* theme primary */
+.theme-primary {
+    background-color: $background-color-primary;
+    color: $font-color-primary;
 }
 
-/* secondary theme */
-.secondary-theme {
-    background-color: $secondary-background-color;
-    color: $secondary-font-color;
-}
-
-
-
-/* primary accent theme */
-.primary-accent-theme {
-    background-color: $primary-accent-background-color;
-    color: $primary-font-color;
-}
-
-/* secondary accent theme */
-.secondary-accent-theme {
-    background-color: $secondary-accent-background-color;
-    color: $primary-font-color;
+/* theme secondary */
+.theme-secondary {
+    background-color: $background-color-secondary;
+    color: $font-color-secondary;
 }
 
 
 
-/* success theme */
-.success-theme {
-    background-color: $success-background-color;
-    color: $success-font-color;
+/* accent theme primary */
+.accent-theme-primary {
+    background-color: $accent-background-color-primary;
+    color: $font-color-primary;
 }
 
-/* warning theme */
-.warning-theme {
-    background-color: $warning-background-color;
-    color: $warning-font-color;
+/* accent theme secondary */
+.accent-theme-secondary {
+    background-color: $accent-background-color-secondary;
+    color: $font-color-primary;
 }
 
-/* error theme */
-.error-theme {
-    background-color: $error-background-color;
-    color: $error-font-color;
+
+
+/* theme success */
+.theme-success {
+    background-color: $background-color-success;
+    color: $font-color-success;
+}
+
+/* theme warning */
+.theme-warning {
+    background-color: $background-color-warning;
+    color: $font-color-warning;
+}
+
+/* theme error */
+.theme-error {
+    background-color: $background-color-error;
+    color: $font-color-error;
 }
 
 
 
 /* font primary */
-.primary-font-color {
-    color: $primary-font-color;
+.font-color-primary {
+    color: $font-color-primary;
 }
 
 /* font secondary */
-.secondary-font-color {
-    color: $secondary-font-color;
+.font-color-secondary {
+    color: $font-color-secondary;
 }
 
 
 
-/* font accent primary */
-.primary-accent-font-color {
-    color: $primary-accent-font-color;
+/* accent font primary */
+.accent-font-color-primary {
+    color: $accent-font-color-primary;
 }
 
-/* font accent secondary */
-.secondary-accent-font-color {
-    color: $secondary-accent-font-color;
-}
-
-
-
-/* primary background color */
-.primary-background-color {
-    background-color: $primary-background-color;
-}
-
-/* secondary background color */
-.secondary-background-color {
-    background-color: $secondary-background-color;
-}
-
-/* tertiary background color */
-.tertiary-background-color {
-    background-color: $tertiary-background-color;
-}
-
-/* quaternary background color */
-.quaternary-background-color {
-    background-color: $quaternary-background-color;
+/* accent font secondary */
+.accent-font-color-secondary {
+    color: $accent-font-color-secondary;
 }
 
 
 
-/* accent background color */
-.primary-accent-background-color {
-    background-color: $primary-accent-color;
+/* background color primary */
+.background-color-primary {
+    background-color: $background-color-primary;
 }
 
-/* accent background color */
-.secondary-accent-background-color {
-    background-color: $secondary-accent-color;
+/* background color secondary */
+.background-color-secondary {
+    background-color: $background-color-secondary;
+}
+
+/* background color tertiary */
+.background-color-tertiary {
+    background-color: $background-color-tertiary;
+}
+
+/* background color quaternary */
+.background-color-quaternary {
+    background-color: $background-color-quaternary;
+}
+
+
+
+/* accent background color primary */
+.accent-background-color-primary {
+    background-color: $accent-color-primary;
+}
+
+/* accent background color secondary */
+.accent-background-color-secondary {
+    background-color: $accent-color-secondary;
 }
 
 
 
 /* success background color */
-.success-background-color {
-    background-color: $success-background-color;
+.background-color-success {
+    background-color: $background-color-success;
 }
 
 /* warning background color */
-.warning-background-color {
-    background-color: $warning-background-color;
+.background-color-warning {
+    background-color: $background-color-warning;
 }
 
 /* error background color */
-.error-background-color {
-    background-color: $error-background-color;
+.background-color-error {
+    background-color: $background-color-error;
 }
 

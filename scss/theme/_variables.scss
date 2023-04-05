@@ -11,51 +11,51 @@ $golden-ratio: 1.618;
 
 //* colours *//
 /* base */
-$primary-color: rgb(10,10,10)!default;
-$secondary-color: rgb(240,240,240)!default;
-$tertiary-color: rgb(80,80,80)!default;
-$quaternary-color: rgb(160,160,160)!default;
+$color-primary: rgb(10,10,10)!default;
+$color-secondary: rgb(240,240,240)!default;
+$color-tertiary: rgb(80,80,80)!default;
+$color-quaternary: rgb(160,160,160)!default;
 
 /* accent */
-$primary-accent-color: rgb(37, 127, 210)!default;
-$secondary-accent-color: rgb(199, 50, 137)!default;
+$accent-color-primary: rgb(37, 127, 210)!default;
+$accent-color-secondary: rgb(199, 50, 137)!default;
 
 /* background */
-$primary-background-color: $primary-color;
-$secondary-background-color: $secondary-color;
-$tertiary-background-color: $tertiary-color;
-$quaternary-background-color: $quaternary-color;
+$background-color-primary: $color-primary;
+$background-color-secondary: $color-secondary;
+$background-color-tertiary: $color-tertiary;
+$background-color-quaternary: $color-quaternary;
 
-$primary-accent-background-color: $primary-accent-color;
-$secondary-accent-background-color: $secondary-accent-color;
+$accent-background-color-primary: $accent-color-primary;
+$accent-background-color-secondary: $accent-color-secondary;
 
 //* utility *//
-$success-color: rgb(19,190,108)!default;
-$warning-color: rgb(224,107,27)!default;
-$error-color: rgb(196,78,78)!default;
-$disabled-color: rgb(125,125,125)!default;
+$color-success: rgb(19,190,108)!default;
+$color-warning: rgb(224,107,27)!default;
+$color-error: rgb(196,78,78)!default;
+$color-disabled: rgb(125,125,125)!default;
 
-$lighten: 40!default;
+$lighten: 32!default;
 
-$success-background-color: lighten($success-color, $lighten);
-$warning-background-color: lighten($warning-color, $lighten);
-$error-background-color: lighten($error-color, $lighten);
-$disabled-background-color: lighten($disabled-color, $lighten);
+$background-color-success: lighten($color-success, $lighten);
+$background-color-warning: lighten($color-warning, $lighten);
+$background-color-error: lighten($color-error, $lighten);
+$background-color-disabled: lighten($color-disabled, $lighten);
 
 //* typography *//
-$primary-font-stack: #{Helvetica-Neue, Arial, sans-serif}!default;
-$secondary-font-stack: #{Helvetica, Arial, sans-serif}!default;
+$font-stack-primary: #{Helvetica-Neue, Arial, sans-serif}!default;
+$font-stack-secondary: #{Helvetica, Arial, sans-serif}!default;
 
-$primary-font-color: $secondary-color;
-$secondary-font-color: $primary-color;
+$font-color-primary: $color-secondary;
+$font-color-secondary: $color-primary;
 
-$primary-accent-font-color: $primary-accent-color!default;
-$secondary-accent-font-color: $secondary-accent-color!default;
+$accent-font-color-primary: $accent-color-primary!default;
+$accent-font-color-secondary: $accent-color-secondary!default;
 
-$success-font-color: $success-color;
-$warning-font-color: $warning-color;
-$error-font-color: $error-color;
-$disabled-font-color: rgba($disabled-color, .5);
+$font-color-success: $color-success;
+$font-color-warning: $color-warning;
+$font-color-error: $color-error;
+$font-color-disabled: rgba($color-disabled, .5);
 
 $font-size: 16px!default;
 $heading-base-font-size: 1!default; /* in 'rem' */

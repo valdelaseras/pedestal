@@ -6,8 +6,8 @@ $h1-size: calc( $h2-size * $golden-ratio );
 
 /* base */
 body {
-    color: $primary-font-color;
-    font-family: $primary-font-stack;
+    color: $font-color-primary;
+    font-family: $font-stack-primary;
     font-size: $font-size;
 }
 

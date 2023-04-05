@@ -64,35 +64,35 @@ The values below are Pedestals defaults. Those you do not intend to override, ca
     $border-radius: 0,
     $scrollbar-width: 4px,
    
-    //* colours *//
+    //* colours (rgba) *//
     /* base */
-    $primary-color: rgb(0,0,0),
-    $secondary-color: rgb(255,255,255),
-    $tertiary-color: rgb(128,128,128),
-    $quaternary-color: rgb(66,66,66),
+    $color-primary: rgb(0,0,0),
+    $color-secondary: rgb(255,255,255),
+    $color-tertiary: rgb(128,128,128),
+    $color-quaternary: rgb(66,66,66),
     
     /* accent */
-    $primary-accent-color: rgb(37, 127, 210),
-    $secondary-accent-color: rgb(199, 50, 137),
+    $accent-color-primary: rgb(37, 127, 210),
+    $accent-color-secondary: rgb(199, 50, 137),
     
     //* typography *//
-    $primary-font-stack: #{Helvetica-Neue, Arial, sans-serif},
-    $secondary-font-stack: #{Helvetica, Arial, sans-serif},
+    $font-stack-primary: #{Helvetica-Neue, Arial, sans-serif},
+    $font-stack-secondary: #{Helvetica, Arial, sans-serif},
     
-    $primary-accent-font-color: rgb(37, 127, 210),
-    $secondary-accent-font-color: rgb(199, 50, 137),
+    $accent-font-color-primary: rgb(37, 127, 210),
+    $accent-font-color-secondary: rgb(199, 50, 137),
     
     $font-size: 16px,
     $heading-base-font-size: 1, /* assuming 'rem' as suffix */
   
     //* utility *//
-    $success-color: rgb(19,190,108),
-    $warning-color: rgb(224,107,27),
-    $error-color: rgb(196,78,78),
-    $disabled-color: rgb(125,125,125),
+    $color-success: rgb(19,190,108),
+    $color-warning: rgb(224,107,27),
+    $color-error: rgb(196,78,78),
+    $color-disabled: rgb(125,125,125),
     
     /* lighten value for utility element background-color, derived from the utility base colours */
-    $lighten: 40,
+    $lighten: 32,
 );
 ```
 
@@ -104,14 +104,14 @@ use it like so:
 
 #some-section {
     h1 {
-        -webkit-text-stroke: 4px pedestal.$secondary-accent-font-color;
+        -webkit-text-stroke: 4px pedestal.$accent-font-color-secondary;
     }
 }
 ```
 
 ### Colours
-It is strongly advised to pick 2 highly contrasting, "muted" colours for `$primary-color` and `$secondary-color` ( e.g.
-black and white ), and then two contrasting, "fun" colours for `$primary-accent-color` and `$secondary-accent-color`. 
+It is strongly advised to pick 2 highly contrasting, "muted" colours for `$color-primary` and `$color-secondary` ( e.g.
+black and white ), and then two contrasting, "fun" colours for `$accent-color-primary` and `$accent-color-secondary`. 
 The colours in these two sets are used in combination with one other in [themes](#theming), so it works best following
 this pattern.
 
@@ -302,95 +302,108 @@ paddings within elements, by either multiplying or dividing the configurable `$p
 
 The following theme classes are available by default to apply to elements like `section`, `form` and
 `card`, setting you up with a variety of themes and options while using just a few colours.
-Too many colours in a palette can be problematic, so consider not to add too many on top.
+Too many colours in a palette can be problematic, so you might consider not to add too many on top, although that
+is complete up to you.
 
 The primary- and corresponding secondary themes are generally the inverse of one another, hence it is advised to
 pick contrasting sets of [colours](#colours). 
 
 #### Base
+
 ```scss
-.primary-theme {
-    background-color: $primary-background-color;
-    color: $primary-font-color;
-    &.bordered {
-        border-color: $secondary-color;
-    }
+.theme-primary {
+   background-color: $background-color-primary;
+   color: $font-color-primary;
+
+   &.bordered {
+      border-color: $color-secondary;
+   }
 }
 
-.secondary-theme {
-    background-color: $secondary-background-color;
-    color: $secondary-font-color;
-    &.bordered {
-        border-color: $primary-color;
-    }
+.theme-secondary {
+   background-color: $background-color-secondary;
+   color: $font-color-secondary;
+
+   &.bordered {
+      border-color: $color-primary;
+   }
 }
 ```
 
-#### Accent 
+#### Accent
+
 ```scss
-.primary-accent-theme {
-    background-color: $primary-accent-background-color;
-    color: $primary-font-color;
-    &.bordered {
-        border-color: $secondary-color;
-    }
+.accent-theme-primary {
+   background-color: $accent-background-color-primary;
+   color: $font-color-primary;
+
+   &.bordered {
+      border-color: $color-secondary;
+   }
 }
 
-.secondary-accent-theme {
-    background-color: $secondary-accent-background-color;
-    color: $primary-font-color;
-    &.bordered {
-        border-color: $secondary-color;
-    }
+.accent-theme-secondary {
+   background-color: $accent-background-color-secondary;
+   color: $font-color-primary;
+
+   &.bordered {
+      border-color: $color-secondary;
+   }
 }
 ```
 
 #### Font base
+
 ```scss
-.primary-font-color {
-    color: $primary-font-color;
+.font-color-primary {
+   color: $font-color-primary;
 }
 
-.secondary-font-color {
-    color: $secondary-font-color;
+.font-color-secondary {
+   color: $font-color-secondary;
 }
 ```
 
 #### Font accent
+
 ```scss
-.primary-accent-font-color {
-    color: $primary-accent-font-color;
+.accent-font-color-primary {
+   color: $accent-font-color-primary;
 }
 
-.secondary-accent-font-color {
-    color: $secondary-accent-font-color;
+.accent-font-color-secondary {
+   color: $accent-font-color-secondary;
 }
 ```
 
-#### Utility 
+#### Utility
+
 ```scss
-.success-theme {
-    background-color: $success-background-color;
-    color: $success-font-color;
-    &.bordered {
-        border-color: $success-color;
-    }
+.theme-success {
+   background-color: $background-color-success;
+   color: $font-color-success;
+
+   &.bordered {
+      border-color: $color-success;
+   }
 }
 
-.warning-theme {
-    background-color: $warning-background-color;
-    color: $warning-font-color;
-    &.bordered {
-        border-color: $warning-color;
-    }
+.theme-warning {
+   background-color: $background-color-warning;
+   color: $font-color-warning;
+
+   &.bordered {
+      border-color: $color-warning;
+   }
 }
 
-.error-theme {
-    background-color: $error-background-color;
-    color: $error-font-color;
-    &.bordered {
-        border-color: $error-color;
-    }
+.theme-error {
+   background-color: $background-color-error;
+   color: $font-color-error;
+
+   &.bordered {
+      border-color: $color-error;
+   }
 }
 ```
 

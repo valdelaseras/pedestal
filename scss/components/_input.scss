@@ -21,14 +21,14 @@ input[type="text"] {
     box-sizing: border-box;
     padding: calc( $padding / ( $golden-ratio * 2 ));
 
-    &.primary-theme {
+    &.theme-primary {
         &.bordered {
-            border-color: $secondary-color;
+            border-color: $color-secondary;
         }
     }
-    &.secondary-theme {
+    &.theme-secondary {
         &.bordered {
-            border-color: $primary-color;
+            border-color: $color-primary;
         }
     }
 }
@@ -76,8 +76,8 @@ label + input[type="radio" i] {
 
 input[type="radio" i]:checked,
 input[type="checkbox" i]:checked {
-    &.primary-theme { background-color: $secondary-background-color; }
-    &.secondary-theme { background-color: $primary-background-color; }
+    &.theme-primary { background-color: $background-color-secondary; }
+    &.theme-secondary { background-color: $background-color-primary; }
 }
 
 input[type="radio"]:hover,

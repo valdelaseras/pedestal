@@ -4,26 +4,26 @@ form {
     flex-direction: column;
     gap: $padding;
 
-    &.primary-theme,
-    &.secondary-theme,
-    &.primary-accent-theme,
-    &.secondary-accent-theme,
-    &.success-theme,
-    &.warning-theme,
-    &.error-theme {
+    &.theme-primary,
+    &.theme-secondary,
+    &.accent-theme-primary,
+    &.accent-theme-secondary,
+    &.theme-success,
+    &.theme-warning,
+    &.theme-error {
         padding: $padding;
     }
 
     &.bordered {
         padding: $padding;
 
-        &.primary-theme { border-color: $secondary-color; }
-        &.secondary-theme { border-color: $primary-color; }
-        &.primary-accent-theme { border-color: $secondary-color; }
-        &.secondary-accent-theme { border-color: $secondary-color; }
-        &.success-theme { border-color: $success-color; }
-        &.warning-theme { border-color: $warning-color; }
-        &.error-theme { border-color: $error-color; }
+        &.theme-primary { border-color: $color-secondary; }
+        &.theme-secondary { border-color: $color-primary; }
+        &.accent-theme-primary { border-color: $color-secondary; }
+        &.accent-theme-secondary { border-color: $color-secondary; }
+        &.theme-success { border-color: $color-success; }
+        &.theme-warning { border-color: $color-warning; }
+        &.theme-error { border-color: $color-error; }
     }
 }
 

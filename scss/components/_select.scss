@@ -5,14 +5,14 @@ select {
     font-size: $font-size;
     border: none;
 
-    &.primary-theme {
+    &.theme-primary {
         &.bordered {
-            border-color: $secondary-color;
+            border-color: $color-secondary;
         }
     }
-    &.secondary-theme {
+    &.theme-secondary {
         &.bordered {
-            border-color: $primary-color;
+            border-color: $color-primary;
         }
     }
 }

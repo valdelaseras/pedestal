@@ -18,9 +18,9 @@
 /* base disabled button */
 .btn.btn-disabled {
     pointer-events: none;
-    background-color: $disabled-background-color;
-    border-color: $disabled-background-color;
-    color: $disabled-font-color;
+    background-color: $background-color-disabled;
+    border-color: $background-color-disabled;
+    color: $font-color-disabled;
 }
 
 .btn.btn-disabled:hover,
@@ -33,9 +33,9 @@
 
 /* primary button */
 .btn-primary {
-    background-color: $primary-accent-background-color;
-    border-color: $primary-accent-background-color;
-    color: $primary-font-color;
+    background-color: $accent-background-color-primary;
+    border-color: $accent-background-color-primary;
+    color: $font-color-primary;
 }
 
 .btn-primary:active,
@@ -43,8 +43,8 @@
 .btn-primary:focus,
 .btn-primary:focus-within {
     background-color: transparent;
-    border-color: $primary-accent-background-color;
-    color: $primary-accent-font-color;
+    border-color: $accent-background-color-primary;
+    color: $accent-font-color-primary;
 }
 
 
@@ -52,17 +52,17 @@
 /* secondary button */
 .btn-secondary {
     background-color: transparent;
-    border-color: $secondary-accent-background-color;
-    color: $secondary-accent-font-color;
+    border-color: $accent-background-color-secondary;
+    color: $accent-font-color-secondary;
 }
 
 .btn-secondary:active,
 .btn-secondary:hover,
 .btn-secondary:focus,
 .btn-secondary:focus-within {
-    background-color: $secondary-accent-background-color;
-    border-color: $secondary-accent-background-color;
-    color: $primary-font-color;
+    background-color: $accent-background-color-secondary;
+    border-color: $accent-background-color-secondary;
+    color: $font-color-primary;
 }
 
 
@@ -82,31 +82,31 @@
 
 
 /* utility button states */
-.btn.success-theme:active,
-.btn.success-theme:focus,
-.btn.success-theme:focus-within,
-.btn.success-theme:hover {
+.btn.theme-success:active,
+.btn.theme-success:focus,
+.btn.theme-success:focus-within,
+.btn.theme-success:hover {
     cursor: pointer;
-    background-color: $success-color;
-    color: $primary-font-color;
+    background-color: $color-success;
+    color: $font-color-primary;
 }
 
-.btn.warning-theme:active,
-.btn.warning-theme:focus,
-.btn.warning-theme:focus-within,
-.btn.warning-theme:hover {
+.btn.theme-warning:active,
+.btn.theme-warning:focus,
+.btn.theme-warning:focus-within,
+.btn.theme-warning:hover {
     cursor: pointer;
-    background-color: $warning-color;
-    color: $primary-font-color;
+    background-color: $color-warning;
+    color: $font-color-primary;
 
 }
 
-.btn.error-theme:active,
-.btn.error-theme:focus,
-.btn.error-theme:focus-within,
-.btn.error-theme:hover {
+.btn.theme-error:active,
+.btn.theme-error:focus,
+.btn.theme-error:focus-within,
+.btn.theme-error:hover {
     cursor: pointer;
-    background-color: $error-color;
-    color: $primary-font-color;
+    background-color: $color-error;
+    color: $font-color-primary;
 }
 
