@@ -1,9 +1,9 @@
 /* mixins */
-@mixin hover-button-border($color) {
+@mixin button-action-border($color) {
     border-color: $color;
 }
 
-@mixin hover-button-background($color) {
+@mixin button-action-background($color) {
     background-color: $color;
 }
 
@@ -45,8 +45,11 @@
 
 .button.button-disabled:hover,
 .button.button-disabled:focus,
-.button.button-disabled:focus-within {
+.button.button-disabled:focus-within,
+.button.button-disabled:active, {
     cursor: not-allowed;
+    @include button-action-background($background-color-disabled);
+    @include button-action-border($font-color-disabled);
 }
 
 
@@ -65,26 +68,20 @@
 
 
 
-/* button hover */
-.button.theme-primary:hover,
-.button.theme-secondary:hover,
-.button.accent-theme-primary:hover,
-.button.accent-theme-secondary:hover,
-.button.theme-success:hover,
-.button.theme-warning:hover,
-.button.theme-error:hover {
-    @include hover-button-background(transparent);
-    @include hover-button-border(currentColor);
+/* button action */
+.button:hover,
+.button:focus,
+.button:focus-within,
+.button:active {
+    @include button-action-background(transparent);
+    @include button-action-border(currentColor);
 }
 
-.button.theme-primary.bordered:hover,
-.button.theme-secondary.bordered:hover,
-.button.accent-theme-primary.bordered:hover,
-.button.accent-theme-secondary.bordered:hover,
-.button.theme-success.bordered:hover,
-.button.theme-warning.bordered:hover,
-.button.theme-error.bordered:hover {
-    @include hover-button-border(transparent);
+.button.bordered:hover,
+.button.bordered:focus,
+.button.bordered:focus-within,
+.button.bordered:active {
+    @include button-action-border(transparent);
 }
 
 
