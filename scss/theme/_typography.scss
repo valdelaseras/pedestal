@@ -18,8 +18,7 @@ p, span {
 
 /* headings */
 h1, h2, h3, h4, h5 {
-//     @TODO: maybe increase margin a bit
-    margin: #{calc( $h5-size / $golden-ratio )}rem 0;
+    margin: 1rem 0;
     word-break: break-all;
 }
 
@@ -29,11 +28,4 @@ h3 { font-size: #{$h3-size}rem; }
 h4 { font-size: #{$h4-size}rem; }
 h5 { font-size: #{$h5-size}rem; }
 
-@media only screen and ( min-width: $breakpoint ) {
-    h1 { font-size: #{$h1-size}rem; }
-    h2 { font-size: #{$h2-size}rem; }
-    h3 { font-size: #{$h3-size}rem; }
-    h4 { font-size: #{$h4-size}rem; }
-    h5 { font-size: #{$h5-size}rem; }
-}
 

@@ -2,7 +2,7 @@
 .list-row,
 .list-column {
     display: flex;
-    gap: calc( $padding / ( $golden-ratio * 2 )  );
+    gap: calc( $padding / 2 );
 }
 
 /* list row */

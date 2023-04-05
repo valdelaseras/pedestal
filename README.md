@@ -64,7 +64,7 @@ The values below are Pedestals defaults. Those you do not intend to override, ca
     $border-radius: 0,
     $scrollbar-width: 4px,
    
-    //* colours ( use rgb ) *//
+    //* colours *//
     /* base */
     $primary-color: rgb(0,0,0),
     $secondary-color: rgb(255,255,255),
