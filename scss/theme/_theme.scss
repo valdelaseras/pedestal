@@ -1,3 +1,10 @@
+@mixin placeholder-theme($color) {
+    &::placeholder {
+        color: $color;
+        opacity: .45;
+    }
+}
+
 /* bordered base */
 .bordered {
     border-width: $border-width;
@@ -12,20 +19,14 @@
 .theme-primary {
     background-color: $background-color-primary;
     color: $font-color-primary;
-}
-
-.theme-primary::placeholder {
-    color: $font-color-primary;
+    @include placeholder-theme($font-color-primary);
 }
 
 /* theme secondary */
 .theme-secondary {
     background-color: $background-color-secondary;
     color: $font-color-secondary;
-}
-
-.theme-secondary::placeholder {
-    color: $font-color-secondary;
+    @include placeholder-theme($font-color-secondary);
 }
 
 
@@ -34,20 +35,14 @@
 .accent-theme-primary {
     background-color: $accent-background-color-primary;
     color: $font-color-primary;
-}
-
-.accent-theme-primary::placeholder {
-    color: $font-color-primary;
+    @include placeholder-theme($font-color-primary);
 }
 
 /* accent theme secondary */
 .accent-theme-secondary {
     background-color: $accent-background-color-secondary;
     color: $font-color-primary;
-}
-
-.accent-theme-secondary::placeholder {
-    color: $font-color-primary;
+    @include placeholder-theme($font-color-primary);
 }
 
 
@@ -56,40 +51,21 @@
 .theme-success {
     background-color: $background-color-success;
     color: $font-color-success;
-}
-
-.theme-success::placeholder {
-    color: $font-color-success;
+    @include placeholder-theme($font-color-success);
 }
 
 /* theme warning */
 .theme-warning {
     background-color: $background-color-warning;
     color: $font-color-warning;
-}
-
-.theme-warning::placeholder {
-    color: $font-color-warning;
+    @include placeholder-theme($font-color-warning);
 }
 
 /* theme error */
 .theme-error {
     background-color: $background-color-error;
     color: $font-color-error;
-}
-
-.theme-error::placeholder {
-    color: $font-color-error;
-}
-
-.theme-primary::placeholder,
-.theme-secondary::placeholder,
-.accent-theme-primary::placeholder,
-.accent-theme-secondary::placeholder,
-.theme-success::placeholder,
-.theme-warning::placeholder,
-.theme-error::placeholder {
-    opacity: .45;
+    @include placeholder-theme($font-color-error);
 }
 
 
