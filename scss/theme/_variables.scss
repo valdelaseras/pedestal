@@ -35,12 +35,12 @@ $warning-color: rgb(224,107,27)!default;
 $error-color: rgb(196,78,78)!default;
 $disabled-color: rgb(125,125,125)!default;
 
-$brighten: 40!default;
+$lighten: 40!default;
 
-$success-background-color: lighten($success-color, $brighten);
-$warning-background-color: lighten($warning-color,$brighten);
-$error-background-color: lighten($error-color,$brighten);
-$disabled-background-color: lighten($disabled-color,$brighten);
+$success-background-color: lighten($success-color, $lighten);
+$warning-background-color: lighten($warning-color, $lighten);
+$error-background-color: lighten($error-color, $lighten);
+$disabled-background-color: lighten($disabled-color, $lighten);
 
 //* typography *//
 $primary-font-stack: #{Helvetica-Neue, Arial, sans-serif}!default;

@@ -91,8 +91,8 @@ The values below are Pedestals defaults. Those you do not intend to override, ca
     $error-color: rgb(196,78,78),
     $disabled-color: rgb(125,125,125),
     
-    /* alpha value for utility element backgrounds derived from the utility base colours */
-    $background-alpha: .25
+    /* lighten value for utility element background-color, derived from the utility base colours */
+    $lighten: 40,
 );
 ```
 
