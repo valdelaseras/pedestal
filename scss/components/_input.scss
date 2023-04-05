@@ -18,19 +18,7 @@ label > input {
 /* text */
 input[type="text"] {
     width: 100%;
-    box-sizing: border-box;
-    padding: calc( $padding / ( $golden-ratio * 2 ));
-
-    &.theme-primary {
-        &.bordered {
-            border-color: $color-secondary;
-        }
-    }
-    &.theme-secondary {
-        &.bordered {
-            border-color: $color-primary;
-        }
-    }
+    padding: calc( $padding / 2 );
 }
 
 
@@ -53,12 +41,16 @@ input[type="checkbox" i]{
 input[type="checkbox" i],
 input[type="radio" i] {
     margin-left: 0;
-    border-width: $border-width;
-    border-style: solid;
+
+    &.bordered {
+        border-width: $border-width;
+        border-style: solid;
+        border-color: currentColor;
+    }
 }
 
-input[type="radio"].large-radio,
-input[type="checkbox"].large-checkbox {
+input[type="radio"].radio-large,
+input[type="checkbox"].checkbox-large {
     height: calc( 1rem + calc( $padding / ( $golden-ratio * 2 ) ));
     width: calc( 1rem + calc( $padding / ( $golden-ratio * 2 ) ));
 }
@@ -76,8 +68,7 @@ label + input[type="radio" i] {
 
 input[type="radio" i]:checked,
 input[type="checkbox" i]:checked {
-    &.theme-primary { background-color: $background-color-secondary; }
-    &.theme-secondary { background-color: $background-color-primary; }
+    background-color: currentColor;
 }
 
 input[type="radio"]:hover,

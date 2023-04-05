@@ -1,112 +1,56 @@
 /* base button */
-.btn {
+.button {
     display: inline-block;
     text-align: center;
     width: auto;
-    padding: calc( $padding / ( $golden-ratio * 2 ) ) $padding;
+    padding: calc( $padding / 2 - $border-width ) $padding;
     border-width: $border-width;
     border-radius: $border-radius;
     border-style: solid;
+    border-color: transparent;
+
+    &.bordered {
+        border-color: currentColor;
+    }
 }
 
-.btn:hover {
+.button:hover {
     cursor: pointer;
 }
 
 
 
 /* base disabled button */
-.btn.btn-disabled {
+.button.button-disabled {
     pointer-events: none;
     background-color: $background-color-disabled;
-    border-color: $background-color-disabled;
     color: $font-color-disabled;
 }
 
-.btn.btn-disabled:hover,
-.btn.btn-disabled:focus,
-.btn.btn-disabled:focus-within {
+.button.button-disabled:hover,
+.button.button-disabled:focus,
+.button.button-disabled:focus-within {
     cursor: not-allowed;
 }
 
 
 
-/* primary button */
-.btn-primary {
-    background-color: $accent-background-color-primary;
-    border-color: $accent-background-color-primary;
-    color: $font-color-primary;
-}
-
-.btn-primary:active,
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:focus-within {
-    background-color: transparent;
-    border-color: $accent-background-color-primary;
-    color: $accent-font-color-primary;
-}
-
-
-
-/* secondary button */
-.btn-secondary {
-    background-color: transparent;
-    border-color: $accent-background-color-secondary;
-    color: $accent-font-color-secondary;
-}
-
-.btn-secondary:active,
-.btn-secondary:hover,
-.btn-secondary:focus,
-.btn-secondary:focus-within {
-    background-color: $accent-background-color-secondary;
-    border-color: $accent-background-color-secondary;
-    color: $font-color-primary;
-}
-
-
-
 /* compact button */
-.btn-compact {
-    padding: calc( $padding / ( $golden-ratio * 2 ) ) calc( $padding / $golden-ratio );
+.button-compact {
+    padding: calc( $padding / 2 - $border-width ) calc( $padding / 2 );
 }
 
 
 
 /* wide button */
-.btn-wide {
-    padding: calc( $padding / ( $golden-ratio * 2 ) ) calc( $padding * $golden-ratio );
+.button-wide {
+    padding: calc( $padding / 2 - $border-width ) calc( $padding * 2 );
 }
 
 
 
-/* utility button states */
-.btn.theme-success:active,
-.btn.theme-success:focus,
-.btn.theme-success:focus-within,
-.btn.theme-success:hover {
-    cursor: pointer;
-    background-color: $color-success;
-    color: $font-color-primary;
-}
 
-.btn.theme-warning:active,
-.btn.theme-warning:focus,
-.btn.theme-warning:focus-within,
-.btn.theme-warning:hover {
-    cursor: pointer;
-    background-color: $color-warning;
-    color: $font-color-primary;
 
-}
 
-.btn.theme-error:active,
-.btn.theme-error:focus,
-.btn.theme-error:focus-within,
-.btn.theme-error:hover {
-    cursor: pointer;
-    background-color: $color-error;
-    color: $font-color-primary;
-}
+
 

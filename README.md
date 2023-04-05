@@ -68,8 +68,6 @@ The values below are Pedestals defaults. Those you do not intend to override, ca
     /* base */
     $color-primary: rgb(0,0,0),
     $color-secondary: rgb(255,255,255),
-    $color-tertiary: rgb(128,128,128),
-    $color-quaternary: rgb(66,66,66),
     
     /* accent */
     $accent-color-primary: rgb(37, 127, 210),

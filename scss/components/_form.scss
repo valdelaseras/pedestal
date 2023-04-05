@@ -10,20 +10,9 @@ form {
     &.accent-theme-secondary,
     &.theme-success,
     &.theme-warning,
-    &.theme-error {
-        padding: $padding;
-    }
-
+    &.theme-error,
     &.bordered {
         padding: $padding;
-
-        &.theme-primary { border-color: $color-secondary; }
-        &.theme-secondary { border-color: $color-primary; }
-        &.accent-theme-primary { border-color: $color-secondary; }
-        &.accent-theme-secondary { border-color: $color-secondary; }
-        &.theme-success { border-color: $color-success; }
-        &.theme-warning { border-color: $color-warning; }
-        &.theme-error { border-color: $color-error; }
     }
 }
 
@@ -35,3 +24,5 @@ form {
     flex-direction: column;
     gap: calc( $padding / 2 );
 }
+
+

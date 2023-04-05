@@ -5,12 +5,26 @@
     gap: calc( $padding / 2 );
 }
 
+
+
 /* list row */
 .list-row {
     flex-wrap: wrap;
 }
 
+.list-row.align-right {
+    justify-content: flex-end;
+}
+
+.list-row.align-center {
+    justify-content: center;
+}
+
+
+
 /* list column */
 .list-column {
     flex-direction: column;
 }
+
+
