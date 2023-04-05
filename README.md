@@ -59,7 +59,7 @@ The values below are Pedestals defaults. Those you do not intend to override, ca
     $scrollbar-width: 4px,
     
     //* animations *//
-    $transition-duration: 200ms,
+    $transition-duration: 100ms,
     $transition-style: ease,
    
     //* colours (rgba) *//
@@ -134,14 +134,12 @@ h5 { font-size: #{$h5-size}rem; }
 
 ### Templating
 
-Pedestal is designed to minimally 'pollute' your templates with classes, so sprinkling your own styles on top will be 
-easier to do and maintain. However, there are a few recommended template structures to follow in order for Pedestal to
-work nicely. I promise it will be good, as it will make Pedestal work optimally but also nudges you to stick to semantic 
-template structures.
+There are a few recommended template structures to follow in order for Pedestal to work nicely. It's not difficult and
+the templating is clean. If you stick to this structure, your layout will always be nice and responsive. 
 
 #### Main structure
 
-A general main element outline should follow the basic structure below: 
+A main element outline should follow the basic structure below: 
 
 ```html
 <main>
@@ -176,10 +174,9 @@ A general main element outline should follow the basic structure below:
 #### Column system
 
 In Pedestal, everything is ordered into columns. Note that whatever column combination you use, on screen widths
-below your configured `$breakpoint` value, the columns will stack vertically by default. This means you never have to worry
-about responsiveness and don't need to do any extra work for small or larger devices. 
+below your configured `$breakpoint` value, the columns will stack vertically by default. 
 
-If you do wish to also have multiple columns on mobile devices or tablet devices, you can simply add additional scss like:
+If you do wish to also have multiple columns on mobile or tablet devices, you can simply add additional scss like:
 
 ```scss
 .column.two.mobile {
