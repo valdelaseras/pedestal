@@ -1,6 +1,8 @@
 /* lists */
 .list-row,
 .list-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: calc( $padding / 2 );
 }
@@ -9,14 +11,19 @@
 
 /* list row */
 .list-row {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 .list-row.align-right {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 }
 
 .list-row.align-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -24,7 +31,9 @@
 
 /* list column */
 .list-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
-
 

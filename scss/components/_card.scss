@@ -1,5 +1,6 @@
 /* card */
 .card {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: $padding;
 }

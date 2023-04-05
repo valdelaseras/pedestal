@@ -19,7 +19,10 @@
     border-radius: $border-radius;
     border-style: solid;
     border-color: transparent;
+    -webkit-transition-duration: $transition-duration;
+    -o-transition-duration: $transition-duration;
     transition-duration: $transition-duration;
+    -webkit-transform-style: $transition-style;
     transform-style: $transition-style;
 
     &.bordered {

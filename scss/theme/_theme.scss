@@ -1,5 +1,21 @@
 /* mixins */
 @mixin placeholder-theme($color) {
+    &::-webkit-input-placeholder {
+        color: $color;
+        opacity: .45;
+    }
+    &::-moz-placeholder {
+        color: $color;
+        opacity: .45;
+    }
+    &:-ms-input-placeholder {
+        color: $color;
+        opacity: .45;
+    }
+    &::-ms-input-placeholder {
+        color: $color;
+        opacity: .45;
+    }
     &::placeholder {
         color: $color;
         opacity: .45;
@@ -135,4 +151,3 @@
 .background-color-error {
     background-color: $background-color-error;
 }
-

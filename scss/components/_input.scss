@@ -1,6 +1,7 @@
 /* base */
 input {
     -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     font-size: $font-size;
     border: none;
@@ -26,12 +27,16 @@ input[type="text"] {
 /* radio */
 input[type="radio" i] {
     border-radius: 50%;
+    -webkit-transform: translateY(3px);
+    -ms-transform: translateY(3px);
     transform: translateY(3px);
 }
 
 /* checkbox */
 input[type="checkbox" i]{
     border-radius: $border-radius;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
     transform: translateY(6px);
 }
 
@@ -75,7 +80,6 @@ input[type="radio"]:hover,
 input[type="checkbox"]:hover {
     cursor: pointer;
 }
-
 
 
 

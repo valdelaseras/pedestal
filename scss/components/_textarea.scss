@@ -1,6 +1,8 @@
 textarea {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     width: 100%;
     padding: calc($padding / ($golden-ratio * 2));
