@@ -29,4 +29,7 @@ h3 { font-size: #{$h3-size}rem; }
 h4 { font-size: #{$h4-size}rem; }
 h5 { font-size: #{$h5-size}rem; }
 
-
+/* anchors */
+a:hover {
+    cursor: pointer;
+}
