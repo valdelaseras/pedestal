@@ -1,18 +1,29 @@
-/* lists */
-.list-row,
-.list-column {
+/* mixins */
+@mixin list-row( $gap ) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: calc( $padding / 2 );
+    gap: $gap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+@mixin list-column( $gap ) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: $gap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 
 
 /* list row */
 .list-row {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    @include list-row( calc( $padding / 2 ) );
 }
 
 .list-row.align-right {
@@ -31,9 +42,6 @@
 
 /* list column */
 .list-column {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    @include list-column( calc( $padding / 2 ) );
 }
 
