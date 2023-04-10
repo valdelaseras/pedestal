@@ -4,6 +4,14 @@ $h3-size: calc( $h4-size * $golden-ratio );
 $h2-size: calc( $h3-size * $golden-ratio );
 $h1-size: calc( $h2-size * $golden-ratio );
 
+
+/* mixins */
+@mixin letter-spacing( $spacing ) {
+    letter-spacing: #{$spacing}px;
+}
+
+
+
 /* base */
 body {
     color: $font-color-primary;
