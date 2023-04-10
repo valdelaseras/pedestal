@@ -106,7 +106,7 @@ To use the variables directly in your custom SCSS, import the package at the top
 use it like so:
 
 ```scss 
-@use '../../../node_modules/@valdelaseras/pedestal/scss/index.scss' as pedestal;
+@use '../../node_modules/@valdelaseras/pedestal/scss/index.scss' as pedestal;
 
 #some-section {
     h1 {
