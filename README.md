@@ -51,9 +51,12 @@ The values below are Pedestals defaults. Those you do not intend to override, ca
     ///* variables *///
 
     //* base *//
+    /* layout */
     $breakpoint: 1440px,
     $padding: 20px,
     $grid: 80vw, /* for min-width $breakpoint screens */
+    
+    /* borders */
     $border-width: 1px,
     $border-radius: 0,
     
@@ -61,7 +64,7 @@ The values below are Pedestals defaults. Those you do not intend to override, ca
     $transition-duration: 100ms,
     $transition-style: ease,
    
-    //* colours (rgba) *//
+    //* colors (rgba) *//
     /* base */
     $color-primary: rgb(0,0,0),
     $color-secondary: rgb(255,255,255),
@@ -70,24 +73,27 @@ The values below are Pedestals defaults. Those you do not intend to override, ca
     $accent-color-primary: rgb(69,180,134),
     $accent-color-secondary: rgb(180,69,115),
     
-    //* typography *//
-    $font-stack-primary: #{Helvetica-Neue, Arial, sans-serif},
-    $font-stack-secondary: #{Helvetica, Arial, sans-serif},
-    
-    $accent-font-color-primary: rgb(69,180,134),
-    $accent-font-color-secondary: rgb(180,69,115),
-    
-    $font-size: 16px,
-    $heading-base-font-size: 1, /* assuming 'rem' as suffix */
-  
-    //* utility *//
+    /* utility */
     $color-success: rgb(19,190,108),
     $color-warning: rgb(224,107,27),
     $color-error: rgb(196,78,78),
     $color-disabled: rgb(125,125,125),
     
-    /* lighten value for utility element background-color, derived from the utility base colours */
+     /* lighten value for utility element background-color, derived from the utility base colours */
     $lighten: 32,
+    
+    //* typography *//
+    /* stack */
+    $font-stack-primary: #{Helvetica-Neue, Arial, sans-serif},
+    $font-stack-secondary: #{Helvetica, Arial, sans-serif},
+    
+    /* colors */
+    $accent-font-color-primary: rgb(69,180,134),
+    $accent-font-color-secondary: rgb(180,69,115),
+    
+    /* size */
+    $font-size: 16px,
+    $heading-base-font-size: 1, /* assuming 'rem' as suffix */
     
     //* scrollbar *//
     $scrollbar-width: 4px,

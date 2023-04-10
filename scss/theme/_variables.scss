@@ -1,18 +1,21 @@
 ///* variables *///
 
 //* base *//
+/* layout */
 $breakpoint: 1440px!default;
 $padding: 20px!default;
 $grid: 80vw!default; /* for min-width $breakpoint screens */
+$golden-ratio: 1.618;
+
+/* borders */
 $border-width: 1px!default;
 $border-radius: 0!default;
-$golden-ratio: 1.618;
 
 //* animations *//
 $transition-duration: 100ms!default;
 $transition-style: ease!default;
 
-//* colours *//
+//* colors *//
 /* base */
 $color-primary: rgb(10,10,10)!default;
 $color-secondary: rgb(240,240,240)!default;
@@ -59,6 +62,7 @@ $font-color-disabled: rgba($color-disabled, .5);
 $font-size: 16px!default;
 $heading-base-font-size: 1!default; /* in 'rem' */
 
+//* scrollbar *//
 $scrollbar-width: 4px!default;
 $color-scrollbar-thumb: $color-secondary!default;
 $color-scrollbar-thumb-hover: $accent-color-secondary!default;
