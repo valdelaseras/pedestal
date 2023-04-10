@@ -56,7 +56,6 @@ The values below are Pedestals defaults. Those you do not intend to override, ca
     $grid: 80vw, /* for min-width $breakpoint screens */
     $border-width: 1px,
     $border-radius: 0,
-    $scrollbar-width: 4px,
     
     //* animations *//
     $transition-duration: 100ms,
@@ -89,6 +88,11 @@ The values below are Pedestals defaults. Those you do not intend to override, ca
     
     /* lighten value for utility element background-color, derived from the utility base colours */
     $lighten: 32,
+    
+    //* scrollbar *//
+    $scrollbar-width: 4px,
+    $color-scrollbar-thumb: rgb(255,255,255),
+    $color-scrollbar-thumb-hover: rgb(180,69,115),
 );
 ```
 
