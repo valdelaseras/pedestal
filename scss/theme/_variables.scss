@@ -45,7 +45,7 @@ $background-color-error: lighten($color-error, $lighten);
 $background-color-disabled: lighten($color-disabled, $lighten);
 
 //* typography *//
-$font-stack-primary: #{Calibri, Helvetica-Neue, Arial, sans-serif}!default;
+$font-stack-primary: #{Barlow, Helvetica-Neue, Arial, sans-serif}!default;
 $font-stack-secondary: #{Garamond, serif}!default;
 
 $font-color-primary: $color-secondary;
