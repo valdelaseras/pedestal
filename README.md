@@ -84,8 +84,8 @@ The values below are Pedestals defaults. Those you do not intend to override, ca
     
     //* typography *//
     /* stack */
-    $font-stack-primary: #{Helvetica-Neue, Arial, sans-serif},
-    $font-stack-secondary: #{Helvetica, Arial, sans-serif},
+    $font-stack-primary: #{Calibri, Helvetica-Neue, Arial, sans-serif},
+    $font-stack-secondary: #{Garamond, serif},
     
     /* colors */
     $accent-font-color-primary: rgb(69,180,134),
