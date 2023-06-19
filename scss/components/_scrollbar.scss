@@ -10,9 +10,9 @@
 
 /* handle */
 ::-webkit-scrollbar-thumb {
-    background-color: $color-scrollbar-thumb;
+    background-color: $background-color-scrollbar-thumb;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: $color-scrollbar-thumb-hover;
+    background-color: $background-color-scrollbar-thumb-hover;
 }

@@ -23,7 +23,7 @@ body {
 
 /* p, span */
 p, span {
-    line-height: #{$golden-ratio}rem;
+    line-height: $golden-ratio;
 }
 
 
