@@ -6,7 +6,7 @@ textarea {
     appearance: none;
     width: 100%;
     padding: calc($padding / ($golden-ratio * 2));
-    font-size: $font-size;
+    font-size: $font-size-mobile;
     border: none;
 
     &.theme-primary {
@@ -18,5 +18,11 @@ textarea {
         &.bordered {
             border-color: $color-primary;
         }
+    }
+}
+
+@media only screen and (min-width: $breakpoint){
+    textarea {
+        font-size: $font-size-desktop;
     }
 }

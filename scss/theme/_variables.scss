@@ -59,8 +59,10 @@ $font-color-warning: $color-warning;
 $font-color-error: $color-error;
 $font-color-disabled: rgba($color-disabled, .5);
 
-$font-size: 16px!default;
-$heading-base-font-size: 1!default; /* in 'rem' */
+$font-size-mobile: 16px!default;
+$heading-base-font-size-mobile: 1!default; /* in 'rem' */
+$font-size-desktop: 18px!default;
+$heading-base-font-size-desktop: 1!default; /* in 'rem' */
 
 //* scrollbar *//
 $scrollbar-width: 4px!default;

@@ -3,8 +3,14 @@ input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    font-size: $font-size;
     border: none;
+    font-size: $font-size-mobile;
+}
+
+@media only screen and (min-width: $breakpoint){
+    input {
+        font-size: $font-size-desktop;
+    }
 }
 
 

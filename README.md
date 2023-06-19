@@ -92,8 +92,10 @@ The values below are Pedestals defaults. Those you do not intend to override, ca
     $accent-font-color-secondary: rgb(180,69,115),
     
     /* size */
-    $font-size: 16px,
-    $heading-base-font-size: 1, /* assuming 'rem' as suffix */
+    $font-size-mobile: 16px,
+    $heading-base-font-size-mobile: 1, /* assuming 'rem' as suffix */
+    $font-size-desktop: 18px,
+    $heading-base-font-size-desktop: 1, /* in 'rem' */
     
     //* scrollbar *//
     $scrollbar-width: 4px,

@@ -1,9 +1,18 @@
-$h5-size: $heading-base-font-size;
+$h5-size: $heading-base-font-size-mobile;
 $h4-size: calc( $h5-size * $golden-ratio );
 $h3-size: calc( $h4-size * $golden-ratio );
 $h2-size: calc( $h3-size * $golden-ratio );
 $h1-size: calc( $h2-size * $golden-ratio );
 
+@media only screen and (min-width: $breakpoint ){
+    $h5-size: $heading-base-font-size-desktop;
+    $h4-size: calc( $h5-size * $golden-ratio );
+    $h3-size: calc( $h4-size * $golden-ratio );
+    $h2-size: calc( $h3-size * $golden-ratio );
+    $h1-size: calc( $h2-size * $golden-ratio );
+
+
+}
 
 /* mixins */
 @mixin letter-spacing( $spacing ) {
@@ -16,7 +25,13 @@ $h1-size: calc( $h2-size * $golden-ratio );
 body {
     color: $font-color-primary;
     font-family: $font-stack-primary;
-    font-size: $font-size;
+    font-size: $font-size-mobile;
+}
+
+@media only screen and (min-width: $breakpoint){
+    body {
+        font-size: $font-size-desktop;
+    }
 }
 
 

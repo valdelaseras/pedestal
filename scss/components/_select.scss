@@ -2,7 +2,7 @@
 select {
     padding: calc( $padding / ( $golden-ratio * 2 ) ) calc( $padding / ( $golden-ratio * 2 ) );
     width: 100%;
-    font-size: $font-size;
+    font-size: $font-size-mobile;
     border: none;
 
     &.theme-primary {
@@ -19,5 +19,11 @@ select {
 
 select:hover {
     cursor: pointer;
+}
+
+@media only screen and (min-width: $breakpoint){
+    select {
+        font-size: $font-size-desktop;
+    }
 }
 
