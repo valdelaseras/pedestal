@@ -97,8 +97,8 @@ The values below are Pedestals defaults. Those you do not intend to override, ca
     
     //* scrollbar *//
     $scrollbar-width: 4px,
-    $color-scrollbar-thumb: rgb(255,255,255),
-    $color-scrollbar-thumb-hover: rgb(180,69,115),
+    $background-color-scrollbar-thumb: rgb(255,255,255),
+    $background-color-scrollbar-thumb-hover: rgb(180,69,115),
 );
 ```
 
