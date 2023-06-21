@@ -46,3 +46,14 @@
         width: 75%;
     }
 }
+
+//@todo: complete this ( with column reversal as well );
+@media screen and (min-width: $breakpoint){
+    .reverse-on-desktop {
+        display: flex;
+    }
+
+    .row-reverse {
+        flex-direction: row-reverse;
+    }
+}
