@@ -278,8 +278,8 @@ The following column classes are available by default:
 | 100%   | 50%        | 33.33%           | 25%             | 38%          | 62%          | 66.66%         | 75%           |
 
 
-Columns stack vertically by default on screens below `$breakpoint`, but will align to the left in a row from that 
-breakpoint without any additional, custom SCSS.
+Columns stack vertically by default on screens below `$breakpoint`, but will align to the left as a row from that 
+breakpoint without any additional SCSS.
 
 When you have the desired column structure, wrap your content in `<div class="content"></div>` as in the sample above. This 
 is going to ensure you will always have consistent padding between content vertically and horizontally, on small or 
@@ -287,8 +287,9 @@ large devices.
 
 #### Responsive content reversal
 Sometimes you need to reverse the position of adjacent columns. Consider the scenario where you might have a paragraph of
-text and a graph image you want to show after the accompanying paragraph but on devices with a large screen, for whatever
-reason, you want to show the graph to the left and the text on the right. Not a problem!
+text and a graph you want to show after the paragraph. On devices with a large screen, for whatever
+reason, you want to show the graph to the left and the text on the right: the reverse of the normal flow of a template 
+with two nested sibling columns. Not a problem!
 
 Of course we are going to build for mobile first ;) so all you really have to do is add the `reverse-on-desktop` class
 to the parent column, which will reverse your columns at your `$breakpoint` and above.
@@ -317,7 +318,7 @@ the grid if desired.
 </section>
 ```
 
-You can optionally set a `$max-grid` as well. You might want to set a maximum fixed width for really large screens for example:
+You can optionally set a `$max-grid` as well. You might want to set a maximum fixed width for really large screens, for example:
 `80vw` on a screen width over `2560px` can really mess up the look of your UI. 
 
 
