@@ -5,15 +5,12 @@
 $breakpoint: 1440px!default;
 $padding: 20px!default;
 $grid: 80vw!default; /* for min-width $breakpoint screens */
+$max-grid: $grid!default; /* optional fixed maximum grid width ( for really large screens for example ) */
 $golden-ratio: 1.618;
 
 /* borders */
 $border-width: 1px!default;
 $border-radius: 0!default;
-
-//* animations *//
-$transition-duration: 100ms!default;
-$transition-style: ease!default;
 
 //* colors *//
 /* base */

@@ -9,6 +9,10 @@
         width: $grid;
         max-width: $grid;
     }
+
+    .grid.max-grid {
+        max-width: $max-grid;
+    }
 }
 
 .grid::after {

@@ -55,14 +55,11 @@ The values below are Pedestals defaults. Those you do not intend to override, ca
     $breakpoint: 1440px,
     $padding: 20px,
     $grid: 80vw, /* for min-width $breakpoint screens */
+    $max-grid: $grid,  /* optional fixed maximum grid width ( for really large screens for example ) */
     
     /* borders */
     $border-width: 1px,
     $border-radius: 0,
-    
-    //* animations *//
-    $transition-duration: 100ms,
-    $transition-style: ease,
    
     //* colors (rgba) *//
     /* base */
@@ -119,10 +116,11 @@ use it like so:
 
 ### Colors
 
-It is strongly advised to pick 2 highly contrasting, "muted" colors for `$color-primary` and `$color-secondary` ( e.g.
+I advise, for an average UI, to pick 2 contrasting, "muted" colors for `$color-primary` and `$color-secondary` ( e.g.
 black and white ), and then two contrasting, "fun" colors for `$accent-color-primary` and `$accent-color-secondary`. 
+
 The colors in these two sets are used in combination with one other, so it works best following this pattern. Of course,
-you are free to add as many colors as you like, but you have to add some of your own CSS in that case.
+you can add as many colors as you like on top of these. 
 
 
 ### Typography
@@ -131,7 +129,7 @@ Heading sizes are automatically calculated by the configurable `$heading-base-fo
 applied to `<h5>` elements, and subsequently multiplied by 1.618, the `$golden-ratio`, the further we go 'up' like so:
 
 ```scss
-$h5-size: $heading-base-font-size;
+$h5-size: $heading-base-font-size-mobile;
 $h4-size: calc( $h5-size * $golden-ratio );
 $h3-size: calc( $h4-size * $golden-ratio );
 $h2-size: calc( $h3-size * $golden-ratio );
@@ -143,6 +141,8 @@ h3 { font-size: #{$h3-size}rem; }
 h4 { font-size: #{$h4-size}rem; }
 h5 { font-size: #{$h5-size}rem; }
 ```
+
+You can set different base values for `mobile` and `desktop` font sizes and heading base sizes.
 
 ### Templating
 
@@ -285,9 +285,27 @@ When you have the desired column structure, wrap your content in `<div class="co
 is going to ensure you will always have consistent padding between content vertically and horizontally, on small or 
 large devices.
 
+#### Responsive content reversal
+Sometimes you need to reverse the position of adjacent columns. Consider the scenario where you might have a paragraph of
+text and a graph image you want to show after the accompanying paragraph but on devices with a large screen, for whatever
+reason, you want to show the graph to the left and the text on the right. Not a problem!
+
+Of course we are going to build for mobile first ;) so all you really have to do is add the `reverse-on-desktop` class
+to the parent column, which will reverse your columns at your `$breakpoint` and above.
+
+```html
+<div class="column reverse-on-desktop">
+   <div class="column two">A</div>
+   <div class="column two">B</div>
+</div>
+```
+
+`A` and `B` will be vertically stacked on mobile in that order, while `B` will be positioned left and `A` to the right
+from the `$breakpoint`.
+
 #### Grid system
 
-The `$grid` value you configer will set the default width of your content, center aligned, on screen widths with a 
+The `$grid` value you configure will set the default width of your content, center aligned, on screen widths with a 
 minimum of your `$breakpoint` value. Nest it within `<section>` elements, or leave it out of a section to break out of
 the grid if desired.
 
@@ -298,5 +316,8 @@ the grid if desired.
     </div>
 </section>
 ```
+
+You can optionally set a `$max-grid` as well. You might want to set a maximum fixed width for really large screens for example:
+`80vw` on a screen width over `2560px` can really mess up the look of your UI. 
 
 
