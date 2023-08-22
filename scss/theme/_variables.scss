@@ -5,7 +5,7 @@
 $breakpoint: 1440px!default;
 $padding: 20px!default;
 $grid: 80vw!default; /* for min-width $breakpoint screens */
-$max-grid: $grid!default; /* optional fixed maximum grid width ( for really large screens for example ) */
+$max-grid: 80vw!default; /* optional fixed maximum grid width ( for really large screens for example ) */
 $golden-ratio: 1.618;
 
 /* borders */
@@ -65,4 +65,5 @@ $heading-base-font-size-desktop: 1!default; /* in 'rem' */
 $scrollbar-width: 4px!default;
 $background-color-scrollbar-thumb: $color-secondary!default;
 $background-color-scrollbar-thumb-hover: $accent-color-secondary!default;
+
 

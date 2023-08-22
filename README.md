@@ -1,8 +1,8 @@
-# Pedestal [WIP] 
+# Pedestal 
 
 An SCSS/SMACCS 'pedestal' to accelerate your workflow. 
 
-Pedestal provides a solid UI foundation, with an automatically responsive, flexible and consistent layout and 
+Pedestal provides a solid foundation, with an automatically responsive, flexible and consistent layout and 
 clean overall look. Quickly configure some variables to adjust the base styles, then you can focus on the fun stuff 
 and easily add your own unique flair by sprinkling your custom styles on top °˖✧◝(⁰▿⁰)◜✧˖°
 
@@ -55,7 +55,7 @@ The values below are Pedestals defaults. Those you do not intend to override, ca
     $breakpoint: 1440px,
     $padding: 20px,
     $grid: 80vw, /* for min-width $breakpoint screens */
-    $max-grid: $grid,  /* optional fixed maximum grid width ( for really large screens for example ) */
+    $max-grid: 80vw,  /* optional fixed maximum grid width ( for really large screens for example ) */
     
     /* borders */
     $border-width: 1px,
@@ -151,36 +151,32 @@ the templating is clean. If you stick to this structure, your layout will always
 
 #### Main structure
 
-A main element outline should follow the basic structure below: 
+A general page outline, divided into sections, may follow a basic structure as below: 
 
 ```html
-<main>
-    <article>
-        <!-- section A -->
-        <section>
-            <div class="grid">
-                <div class="column">
-                    <div class="content">
-                        <!-- section A content goes here -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- section B -->
-        <section>
-            <div class="grid">
-                <div class="column">
-                    <div class="content">
-                        <!-- section B content goes here -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- section C ...etc-->
-    </article>
-</main>
+   <!-- section A -->
+   <section>
+      <div class="grid">
+          <div class="column">
+              <div class="content">
+                  <!-- section A content goes here -->
+              </div>
+          </div>
+      </div>
+   </section>
+   
+   <!-- section B -->
+   <section>
+      <div class="grid">
+          <div class="column">
+              <div class="content">
+                  <!-- section B content goes here -->
+              </div>
+          </div>
+      </div>
+   </section>
+   
+   <!-- section C ...etc-->
 ```
 
 #### Column system
