@@ -1,6 +1,6 @@
 {
   "name": "@valdelaseras/pedestal",
-  "version": "2.0.10",
+  "version": "2.0.11",
   "description": "A simple  SCSS 'scaffold' to accelerate new project setups",
   "repository": {
     "type": "git",
@@ -8,7 +8,7 @@
   },
   "scripts": {
     "serve": "http-server .",
-    "sass": "sass --watch scss/index.scss css/index.css",
+    "sass-watch": "sass --watch scss/index.scss css/index.css",
     "dev": "npm run sass-watch & npm run serve",
     "sass-compile": "sass scss/index.scss css/index.css"
   },

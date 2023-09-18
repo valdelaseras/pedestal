@@ -4,13 +4,11 @@ $h3-size: calc( $h4-size * $golden-ratio );
 $h2-size: calc( $h3-size * $golden-ratio );
 $h1-size: calc( $h2-size * $golden-ratio );
 
-@media only screen and (min-width: $breakpoint ){
-    $h5-size: $heading-base-font-size-desktop;
-    $h4-size: calc( $h5-size * $golden-ratio );
-    $h3-size: calc( $h4-size * $golden-ratio );
-    $h2-size: calc( $h3-size * $golden-ratio );
-    $h1-size: calc( $h2-size * $golden-ratio );
-}
+$h5-desktop-size: $heading-base-font-size-desktop;
+$h4-desktop-size: calc( $h5-desktop-size * $golden-ratio );
+$h3-desktop-size: calc( $h4-desktop-size * $golden-ratio );
+$h2-desktop-size: calc( $h3-desktop-size * $golden-ratio );
+$h1-desktop-size: calc( $h2-desktop-size * $golden-ratio );
 
 
 /* mixins */
@@ -48,12 +46,55 @@ h1, h2, h3, h4, h5 {
     padding: 1rem 0;
 }
 
-h1 { font-size: #{$h1-size}rem; }
-h2 { font-size: #{$h2-size}rem; }
-h3 { font-size: #{$h3-size}rem; }
-h4 { font-size: #{$h4-size}rem; }
-h5 { font-size: #{$h5-size}rem; }
+h1 {
+    font-size: #{$h1-size}rem;
+}
 
+@media only screen and (min-width: $breakpoint) {
+    h1 {
+        font-size: #{$h1-desktop-size}rem;
+    }
+}
+
+h2 {
+    font-size: #{$h2-size}rem;
+}
+
+@media only screen and (min-width: $breakpoint) {
+    h2 {
+        font-size: #{$h2-desktop-size}rem;
+    }
+}
+
+h3 {
+    font-size: #{$h3-size}rem;
+}
+
+@media only screen and (min-width: $breakpoint) {
+    h4 {
+        font-size: #{$h4-desktop-size}rem;
+    }
+}
+
+h4 {
+    font-size: #{$h4-size}rem;
+}
+
+@media only screen and (min-width: $breakpoint) {
+    h5 {
+        font-size: #{$h5-desktop-size}rem;
+    }
+}
+
+h5 {
+    font-size: #{$h5-size}rem;
+}
+
+@media only screen and (min-width: $breakpoint) {
+    h5 {
+        font-size: #{$h5-desktop-size}rem;
+    }
+}
 
 
 /* anchors */
