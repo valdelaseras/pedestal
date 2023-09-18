@@ -72,7 +72,7 @@ h3 {
 
 @media only screen and (min-width: $breakpoint) {
     h3 {
-        font-size: #{$h4-desktop-size}rem;
+        font-size: #{$h3-desktop-size}rem;
     }
 }
 
@@ -82,7 +82,7 @@ h4 {
 
 @media only screen and (min-width: $breakpoint) {
     h4 {
-        font-size: #{$h5-desktop-size}rem;
+        font-size: #{$h4-desktop-size}rem;
     }
 }
 
