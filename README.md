@@ -85,14 +85,16 @@ The values below are Pedestals defaults. Those you do not intend to override, ca
     $font-stack-secondary: #{Garamond, serif},
     
     /* colors */
+    $font-color-primary: rgb(0,0,0),
+    $font-color-secondary:rgb(255,255,255),
     $accent-font-color-primary: rgb(69,180,134),
     $accent-font-color-secondary: rgb(180,69,115),
     
     /* size */
     $font-size-mobile: 16px,
-    $heading-base-font-size-mobile: 1, /* assuming 'rem' as suffix */
     $font-size-desktop: 18px,
-    $heading-base-font-size-desktop: 1, /* in 'rem' */
+    $heading-base-font-size-mobile: 1, /* assuming 'rem' as suffix */
+    $heading-base-font-size-desktop: 2, /* in 'rem' */
     
     //* scrollbar *//
     $scrollbar-width: 4px,

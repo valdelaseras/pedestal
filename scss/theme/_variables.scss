@@ -45,8 +45,8 @@ $background-color-disabled: lighten($color-disabled, $lighten);
 $font-stack-primary: #{Barlow, Helvetica-Neue, Arial, sans-serif}!default;
 $font-stack-secondary: #{Garamond, serif}!default;
 
-$font-color-primary: $color-secondary;
-$font-color-secondary: $color-primary;
+$font-color-primary: $color-secondary!default;
+$font-color-secondary: $color-primary!default;
 
 $accent-font-color-primary: $accent-color-primary!default;
 $accent-font-color-secondary: $accent-color-secondary!default;
